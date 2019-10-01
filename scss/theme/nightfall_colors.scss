@@ -3,8 +3,6 @@
 // ------------------------------------------------------------------
 
 // Here you can change the main colors for the theme.
-// Note: These colours only apply to public areas, colors for admin
-// pages can be changed in the "about.json" file.
 
 // Primary: A primary color from which the majority of other colors 
 // is generated
@@ -26,3 +24,7 @@ $theme-staff: #ff0000;
 // Also change the theme-color meta tag in the "common/head_tag.html"
 // file. This should match the color for $theme-secondary. It is
 // a color that some mobile browsers use for the address bar UI.
+
+// Colors above apply to all public pages. If you wish to modify
+// theme of the admin interface, edit the color scheme in the
+// "about.json" file.
