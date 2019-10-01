@@ -15,9 +15,9 @@ Learn more about Discourse themes in the [official guide](https://meta.discourse
 ### Installation
 
 To install the theme as it is:
-1) Visit `http://your-domain.com/admin/customize/themes` or navigate via the UI head to *Admin > Customize > Themes*.
-2) Click on the *Install* button and select the *From a git repository* option.
-3) Paste the repository address (`https://github.com/bartosjiri/discourse-nightfall-theme`) to the input field and click *Install* again.
+1) Visit `http://your-domain.com/admin/customize/themes` or navigate via the UI head to *"Admin > Customize > Themes"*.
+2) Click on the *"Install"* button and select the *"From a git repository"* option.
+3) Paste the repository address (`https://github.com/bartosjiri/discourse-nightfall-theme`) to the input field and click *"Install"* again.
 
 You can also reffer to the [official guide](https://meta.discourse.org/t/how-do-i-install-a-theme-or-theme-component/63682).
 
