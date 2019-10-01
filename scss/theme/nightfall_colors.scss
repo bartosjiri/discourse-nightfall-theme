@@ -22,3 +22,7 @@ $theme-danger: #ff0000;
 
 // Staff: Color for actions available only to staff members
 $theme-staff: #ff0000;
+
+// Also change the theme-color meta tag in the "common/head_tag.html"
+// file. This should match the color for $theme-secondary. It is
+// a color that some mobile browsers use for the address bar UI.
