@@ -1,0 +1,20 @@
+body {
+  &:not(.admin-interface) {
+    #topic-footer-buttons {
+      .topic-footer-main-buttons {
+        .select-kit {
+          .select-kit-header {
+            background: $light-a025;
+            border: none;
+            svg {
+              fill: $light-a085;
+            }
+          }
+          .select-kit-body {
+            color: $dark-a100;
+          }
+        }
+      }
+    }
+  }
+}

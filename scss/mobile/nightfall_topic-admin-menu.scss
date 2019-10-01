@@ -1,0 +1,37 @@
+body {
+  &:not(.admin-interface) {
+    #topic-progress-wrapper {
+      .topic-admin-menu-button-container {
+        .toggle-admin-menu {
+          background: $theme-staff;
+          svg {
+            fill: $light-a100;
+          }
+        }
+        .topic-admin-popup-menu {
+          background-color: $theme-staff;
+          border: none;
+          h3 {
+            color: $light-a100;
+          }
+          ul {
+            li {
+              button {
+                background: $dark-a025 !important;
+                svg {
+                  fill: $light-a100;
+                }
+                span {
+                  color: $light-a100;
+                }
+                &:hover {
+                  background: $dark-a050 !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

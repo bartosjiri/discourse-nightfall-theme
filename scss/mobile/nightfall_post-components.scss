@@ -1,0 +1,9 @@
+body {
+  &:not(.admin-interface) {
+    .poll {
+      .poll-info {
+        border-top: 1px solid $light-a015;
+      }
+    }
+  }
+}

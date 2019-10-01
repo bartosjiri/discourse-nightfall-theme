@@ -1,0 +1,30 @@
+body {
+  &:not(.admin-interface) {
+    .group {
+      .user-content-wrapper {
+        .user-primary-navigation {
+          .group-nav {
+            .group-dropdown {
+              .select-kit-header {
+                font-size: $font-up-2;
+              }
+            }
+          }
+        }
+        .user-content {
+          .user-stream {
+            .user-stream-item {
+              .info {
+                .time {
+                  span {
+                    font-size: $font-0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

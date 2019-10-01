@@ -1,0 +1,19 @@
+body {
+  &:not(.admin-interface) {
+    .directory {
+      table {
+        tbody {
+          tr {
+            td {
+              span {
+                &.number {
+                  font-size: $font-up-2;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

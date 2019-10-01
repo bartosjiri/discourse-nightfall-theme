@@ -1,0 +1,7 @@
+body {
+  &:not(.admin-interface) {
+    #share-link {
+      color: $dark-a100;
+    }
+  }
+}

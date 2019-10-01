@@ -1,0 +1,9 @@
+body {
+  &:not(.admin-interface) {
+    .moderator {
+      .regular > .cooked {
+        background-color: transparent;
+      }
+    }
+  }
+}

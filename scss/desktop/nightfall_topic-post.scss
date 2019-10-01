@@ -1,0 +1,29 @@
+body {
+  &:not(.admin-interface) {
+    .topic-post {
+      .topic-body {
+        .topic-meta-data {
+          .names {
+            span {
+              a {
+                font-size: $font-up-1;
+              }
+            }
+          }
+        }
+        .cooked {
+          font-size: $font-up-1;
+        }
+        .post-menu-area {
+          .post-controls {
+            .show-replies {
+              span {
+                font-size: $font-up-1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

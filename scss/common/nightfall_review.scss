@@ -1,0 +1,53 @@
+body {
+  &:not(.admin-interface) {
+    .reviewable {
+      .nav-pills {
+        li {
+          transition: background 0.15s ease;
+          a {
+            // font-size: $font-up-2;
+            color: $light-a050;
+            transition: color 0.15s ease;
+            background-color: transparent;
+          }
+          &:hover {
+            background: $light-a025;
+            a {
+              color: $light-a100;
+              background-color: transparent;
+            }
+          }
+          &.active {
+            a {
+              color: $light-a100;
+              background-color: transparent;
+            }
+          }
+        }
+      }
+      .reviewable-container {
+        .reviewable-list {
+
+        }
+        .reviewable-filters {
+          background-color: $light-a025;
+          color: $light-a085;
+          .reviewable-filter {
+            .select-kit {
+              color: $dark-a100;
+            }
+          }
+        }
+      }
+      .reviewable-settings {
+        .reviewable-score-type {
+          .field {
+            .select-kit {
+              color: $dark-a100;
+            }
+          }
+        }
+      }
+    }
+  }
+}

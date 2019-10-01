@@ -1,0 +1,87 @@
+body {
+  &:not(.admin-interface) {
+    #topic-title {
+      .title-wrapper {
+        .topic-category {
+          .badge-wrapper {
+            .badge-category {
+              font-size: $font-up-2;
+            }
+          }
+          .topic-header-extra {
+            .list-tags {
+              .discourse-tags {
+                a {
+                  font-size: $font-up-1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    #topic {
+      #topic-footer-buttons {
+        .topic-footer-main-buttons {
+          .topic-footer-button,
+          .create {
+            font-size: $font-up-1;
+          }
+        }
+      }
+      .suggested-topics-wrapper {
+        .suggested-topics {
+          .suggested-topics-title {
+            font-size: $font-up-2;
+          }
+          .topics {
+            .topic-list {
+              tbody {
+                tr {
+                  .main-link {
+                    font-size: $font-0;
+                    .link-top-line {
+                      a {
+                        font-size: $font-up-2;
+                      }
+                      .topic-post-badges {
+                        a {
+                          font-size: $font-up-1;
+                        }
+                      }
+                    }
+                    .link-bottom-line {
+                      font-size: $font-0;
+                      .badge-wrapper {
+                        .badge-category {
+                          font-size: $font-up-2;
+                        }
+                      }
+                    }
+                  }
+                  .posts,
+                  .views,
+                  .activity {
+                    span {
+                      font-size: 1.2em;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .suggested-topics-message {
+            font-size: $font-up-2;
+            a {
+              &.badge-wrapper {
+                .badge-category {
+                  font-size: $font-up-1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

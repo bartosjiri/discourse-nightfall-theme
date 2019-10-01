@@ -1,0 +1,20 @@
+// ------------------------------------------------------------------
+// To customize the theme, edit files in the "scss/theme" directory
+// ------------------------------------------------------------------
+
+// Import theme variables
+@import "theme/nightfall_colors";
+@import "theme/nightfall_background";
+@import "common/nightfall_variables";
+
+// Import mobile-specific styles
+@import "mobile/nightfall_groups";
+@import "mobile/nightfall_home";
+@import "mobile/nightfall_post-components";
+@import "mobile/nightfall_profile";
+@import "mobile/nightfall_search";
+@import "mobile/nightfall_topic-admin-menu";
+@import "mobile/nightfall_topic-list";
+@import "mobile/nightfall_topic-post";
+@import "mobile/nightfall_topic";
+@import "mobile/nightfall_users";

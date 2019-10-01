@@ -1,0 +1,228 @@
+body {
+  &:not(.admin-interface) {
+    .search-advanced {
+      .search-bar {
+        input {
+          background: $light-a015;
+          border: 1px solid $light-a025;
+          color: $light-a100;
+        }
+      }
+      .search-notice {
+        // @TODO
+      }
+      .search-context {
+        // @TODO
+      }
+      .search-title {
+        button {
+          background: $light-a015;
+          span {
+            color: $light-a075;
+            transition: all 0.15s ease;
+          }
+          svg {
+            fill: $light-a075;
+            transition: fill 0.15s ease;
+          }
+          &:hover {
+            background: $light-a025;
+            span {
+              color: $light-a100;
+            }
+            svg {
+              fill: $light-a100;
+            }
+          }
+        }
+      }
+      .search-info {
+        border-bottom: 1px solid $light-a015;
+        .sort-by {
+          .select-kit-header {
+            background: $light-a015;
+            border: 1px solid $light-a025;
+            color: $light-a100;
+            svg {
+              fill: $light-a085;
+            }
+          }
+          .select-kit-body {
+            color: $dark-a100;
+          }
+        }
+      }
+      .search-results {
+        .no-results-suggestion {
+          a {
+            color: $light-a100;
+            border-bottom: 1px solid $light-a025;
+            transition: all 0.15s ease;
+            &:hover {
+              border-bottom: 1px solid $light-a100;
+            }
+          }
+        }
+        .google-search-form {
+          form {
+            input {
+              background: $light-a015;
+              border: 1px solid $light-a025;
+              color: $light-a100;
+            }
+          }
+        }
+        .fps-result {
+          background: $light-a005;
+          padding: 10px;
+          margin-bottom: 1px;
+          .fps-topic {
+            .topic {
+              .search-link {
+                .topic-statuses {
+                  svg {
+                    fill: $light-a075;
+                    transition: fill 0.15s ease;
+                  }
+                }
+                .topic-title {
+                  span {
+                    color: $light-a075;
+                    transition: color 0.15s ease;
+                  }
+                }
+                &:hover {
+                  .topic-statuses {
+                    svg {
+                      fill: $light-a100;
+                    }
+                  }
+                  .topic-title {
+                    span {
+                      color: $light-a100;
+                    }
+                  }
+                }
+              }
+              .search-category {
+                .badge-wrapper {
+                  .badge-category {
+                    .category-name {
+                      font-weight: normal;
+                      color: $light-a050;
+                      transition: color 0.15s ease;
+                    }
+                  }
+                  &:hover {
+                    .category-name {
+                      color: $light-a075;
+                    }
+                  }
+                }
+                .discourse-tag {
+                  color: $light-a050;
+                  transition: color 0.15s ease;
+                  &:hover {
+                    color: $light-a075;
+                  }
+                }
+              }
+            }
+            .blurb {
+              .date {
+                span {
+                  color: $light-a050;
+                }
+              }
+              span {
+                color: $light-a085;
+                .search-highlight {
+                  color: $light-a085;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .search-advanced-sidebar {
+      .search-advanced-title {
+        background: $light-a015;
+      }
+      .search-advanced-filters {
+        background: $light-a015;
+        .search-advanced-options {
+          .controls {
+            .ac-wrap {
+              background: $light-a015;
+              border: 1px solid $light-a025;
+              input {
+                background: transparent;
+                color: $light-a100;
+              }
+            }
+            .select-kit {
+              &.multi-select {
+                background: transparent;
+              }
+              .select-kit-header {
+                background: $light-a015;
+                border: 1px solid $light-a025;
+                color: $light-a100;
+                svg {
+                  fill: $light-a085;
+                }
+                .filter-input {
+                  color: $light-a100;
+                }
+                .selected-name {
+                  .body {
+                    background: transparent;
+                    svg {
+                      fill: $light-a075;
+                      transition: fill 0.15s ease;
+                      &:hover {
+                        fill: $light-a100;
+                      }
+                    }
+                    .badge-wrapper {
+                      // font-size: $font-0;
+                      .category-name {
+                        color: $light-a085;
+                        font-weight: normal;
+                      }
+                    }
+                  }
+                }
+                .btn-clear {
+                  svg {
+                    fill: $light-a075;
+                    transition: fill 0.15s ease;
+                    &:hover {
+                      fill: $light-a100;
+                    }
+                  }
+                }
+              }
+              .select-kit-body {
+                color: $dark-a100;
+              }
+            }
+            .date-picker-wrapper {
+              input {
+                background: $light-a015;
+                border: 1px solid $light-a025;
+                color: $light-a100;
+              }
+            }
+            .input-small {
+              background: $light-a015;
+              border: 1px solid $light-a025;
+              color: $light-a100;
+            }
+          }
+        }
+      }
+    }
+  }
+}

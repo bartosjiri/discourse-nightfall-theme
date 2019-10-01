@@ -1,0 +1,19 @@
+$light-a005: rgba(255,255,255,0.05);
+$light-a015: rgba(255,255,255,0.15);
+$light-a025: rgba(255,255,255,0.25);
+$light-a050: rgba(255,255,255,0.5);
+$light-a075: rgba(255,255,255,0.75);
+$light-a080: rgba(255,255,255,0.8);
+$light-a085: rgba(255,255,255,0.85);
+$light-a100: rgba(255,255,255,1);
+
+$dark-a015: rgba(0,0,0,0.15);
+$dark-a025: rgba(0,0,0,0.25);
+$dark-a050: rgba(0,0,0,0.5);
+$dark-a075: rgba(0,0,0,0.75);
+$dark-a100: rgba(0,0,0,1);
+
+@mixin rgba-hex($property, $hexcolor, $opacity) {
+  #{$property}: $hexcolor; // @TODO: proper fallback for IE & Edge
+  #{$property}: rgba($hexcolor, $opacity);
+}

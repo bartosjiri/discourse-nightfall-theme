@@ -1,0 +1,23 @@
+body {
+  &:not(.admin-interface) {
+    .search-advanced-sidebar {
+      .search-advanced-filters {
+        .search-advanced-options {
+          .controls {
+            .select-kit {
+              .select-kit-header {
+                .selected-name {
+                  .body {
+                    .badge-wrapper {
+                      font-size: $font-0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

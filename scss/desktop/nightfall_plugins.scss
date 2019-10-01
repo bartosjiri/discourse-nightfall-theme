@@ -1,0 +1,25 @@
+body {
+  &:not(.admin-interface) {
+    .cakeday {
+      .nav-pills,
+      .anniversaries .nav-pills,
+      .birthdays .nav-pills {
+        li {
+          a {
+            font-size: $font-up-2;
+          }
+        }
+      }
+      .anniversaries,
+      .birthdays {
+        .cakeday-months {
+          .select-kit {
+            .select-kit-header {
+              font-size: $font-up-2;
+            }
+          }
+        }
+      }
+    }
+  }
+}

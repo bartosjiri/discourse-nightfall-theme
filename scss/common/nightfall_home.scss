@@ -1,0 +1,238 @@
+body {
+  &:not(.admin-interface) {
+    #list-area {
+      .category-list {
+        tbody {
+          tr {
+            .category {
+              .category-text-title {
+                word-wrap: break-word;
+                svg {
+                  fill: $light-a085;
+                }
+                .category-name {
+                  // font-size: $font-up-1;
+                }
+              }
+              .category-description {
+                color: $light-a050;
+                // font-size: $font-up-1;
+                margin-bottom: $font-0;
+                a {
+                  color: $light-a075;
+                  border-bottom: 1px solid $light-a025;
+                  transition: all 0.15s ease;
+                  &:hover {
+                    color: $light-a075;
+                    border-bottom: 1px solid $light-a100;
+                  }
+                }
+              }
+              .subcategories {
+                .subcategory {
+                  .badge-wrapper {
+                    .category-name {
+                      color: $light-a075;
+                      transition: color 0.15s ease;
+                      // font-size: $font-up-2;
+                      font-weight: normal;
+                      line-height: 1.7;
+                    }
+                    &:hover {
+                      .category-name {
+                        color: $light-a100;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .topics {
+              div {
+                color: $light-a050;
+                span {
+                  color: $light-a050;
+                }
+              }
+            }
+            .latest {
+              .featured-topic {
+                .last-posted-at {
+                  .relative-date {
+                    color: $light-a050;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .categories-and-latest,
+      .categories-and-top {
+        .category-list {
+          thead {
+            tr {
+              .topics {
+                display: none;
+              }
+            }
+          }
+          tbody {
+            tr {
+              .category {
+                .category-text-title {
+                  word-wrap: break-word;
+                  svg {
+                    fill: $light-a085;
+                  }
+                  .category-name {
+                    // font-size: $font-up-1;
+                  }
+                }
+                .category-description {
+                  color: $light-a050;
+                  // font-size: $font-up-1;
+                  margin-bottom: $font-0;
+                }
+                .subcategories {
+                  .subcategory {
+                    .badge-wrapper {
+                      .category-name {
+                        color: $light-a075;
+                        transition: color 0.15s ease;
+                        // font-size: $font-up-2;
+                        font-weight: normal;
+                        line-height: 1.7;
+                      }
+                      &:hover {
+                        .category-name {
+                          color: $light-a100;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              .topics {
+                display: none;
+              }
+            }
+          }
+        }
+        .latest-topic-list,
+        .top-topic-list {
+          .table-heading {
+            color: $light-a050;
+            border-bottom: 1px solid $light-a015;
+          }
+          .latest-topic-list-item {
+            border-bottom: 1px solid $light-a015;
+            transition: background 0.15s ease;
+            &:hover {
+              background: $light-a005;
+            }
+            .topic-poster {
+              display: none;
+            }
+            .main-link {
+              .top-row {
+                .topic-statuses {
+                  .topic-status {
+                    svg {
+                      color: $light-a085;
+                    }
+                  }
+                }
+                .title {
+                  // font-size: $font-up-1;
+                  color: $light-a085;
+                  text-decoration: none;
+                  transition: color 0.15s ease;
+                  &:hover {
+                    color: $light-a100;
+                  }
+                }
+                .topic-post-badges {
+                  // @TODO
+                }
+              }
+              .bottom-row {
+                // font-size: $font-0;
+                .badge-wrapper {
+                  .badge-category {
+                    // font-size: $font-up-2;
+                    font-weight: normal;
+                    line-height: 2;
+                    color: $light-a050;
+                    transition: color 0.15s ease;
+                    svg {
+                      fill: $light-a050;
+                      transition: fill 0.15s ease;
+                    }
+                    &:hover {
+                      color: $light-a075;
+                      svg {
+                        fill: $light-a075;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .topic-stats {
+              .posts {
+                .badge-posts {
+                  // font-size: $font-up-1;
+                  color: $light-a050;
+                }
+              }
+              .topic-last-activity {
+                a {
+                  // font-size: $font-up-1;
+                  color: $light-a050;
+                }
+              }
+            }
+            &.visited {
+              .main-link {
+                .top-row {
+                  opacity: 0.65;
+                  transition: opacity 0.15s ease;
+                  &:hover {
+                    opacity: 1;
+                  }
+                }
+              }
+            }
+          }
+          .more-topics {
+            a {
+              background: $light-a015;
+              color: $light-a075;
+              transition: all 0.15s ease;
+              span {
+                color: $light-a075;
+                transition: all 0.15s ease;
+              }
+              svg {
+                fill: $light-a075;
+                transition: fill 0.15s ease;
+              }
+              &:hover {
+                background: $light-a025;
+                color: $light-a100;
+                span {
+                  color: $light-a100;
+                }
+                svg {
+                  fill: $light-a100;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

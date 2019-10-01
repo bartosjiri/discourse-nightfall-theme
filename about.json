@@ -1,0 +1,28 @@
+{
+    "name": "Nightfall",
+    "component": false,
+    "license_url": null,
+    "about_url": "http://bartosjiri.com",
+    "authors": "Jiri Bartos",
+    "theme_version": "0.9.0",
+    "minimum_discourse_version": "2.3.0.beta8",
+    "maximum_discourse_version": null,
+    "assets": {
+        "body-background": "assets/body-background.jpg",
+        "header-background": "assets/header-background.jpg"
+    },
+    "color_schemes": {
+        "Nightfall": {
+            "primary": "222222",
+            "secondary": "ffffff",
+            "tertiary": "6812e6",
+            "quaternary": "27135c",
+            "header_background": "ffffff",
+            "header_primary": "333333",
+            "highlight": "ffff4d",
+            "danger": "e45735",
+            "success": "1ca551",
+            "love": "fa6c8d"
+        }
+    }
+}

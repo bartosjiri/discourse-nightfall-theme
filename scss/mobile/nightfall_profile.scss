@@ -1,0 +1,93 @@
+body {
+  &:not(.admin-interface) {
+    .user-main {
+      .about {
+        .details {
+          .primary {
+            .primary-textual {
+              .user-profile-names {
+                .username {
+                  color: $light-a085;
+                  svg {
+                    fill: $light-a085;
+                  }
+                }
+                .full-name {
+                  color: $light-a085;
+                }
+              }
+              .location-and-website {
+                .user-profile-location {
+                  color: $light-a085;
+                  svg {
+                    fill: $light-a085;
+                  }
+                }
+                .user-profile-website {
+                  svg {
+                    fill: $light-a085;
+                  }
+                }
+              }
+              .bio {
+                color: $light-a085;
+              }
+            }
+          }
+        }
+      }
+      .user-content-wrapper {
+        .user-primary-navigation {
+          .main-nav {
+            border: none;
+            li {
+              a {
+                background: $light-a025;
+                color: $light-a085;
+                svg {
+                  fill: $light-a085;
+                }
+              }
+            }
+            .drop {
+              li {
+                a {
+                  color: $dark-a100;
+                  &.active {
+                    color: $dark-a100;
+                    font-weight: bold;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .user-secondary-navigation {
+          ul {
+            border: none;
+            li {
+              a {
+                background: $light-a025;
+                color: $light-a085;
+                svg {
+                  fill: $light-a085;
+                }
+              }
+            }
+            .drop {
+              li {
+                a {
+                  color: $dark-a100;
+                  &.active {
+                    color: $dark-a100;
+                    font-weight: bold;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

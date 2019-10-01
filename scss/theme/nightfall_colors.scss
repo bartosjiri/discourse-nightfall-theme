@@ -1,0 +1,24 @@
+// ------------------------------------------------------------------
+// THEME COLORS
+// ------------------------------------------------------------------
+
+// Here you can change the main colors for the theme.
+// Note: These colours only apply to public areas, colors for admin
+// pages can be changed in the "about.json" file.
+
+// Primary: A primary color from which the majority of other colors 
+// is generated
+$theme-primary: #27135c;
+
+// Secondary: A ligther alternative to primary color, used for header 
+// and some other elements
+$theme-secondary: #473674; 
+
+// Action: A vibrant color for call-to-action elements
+$theme-action: #6812e6; 
+
+// Danger: Warning for major actions like delete and similar
+$theme-danger: #ff0000;
+
+// Staff: Color for actions available only to staff members
+$theme-staff: #ff0000;

@@ -1,0 +1,79 @@
+body {
+  &:not(.admin-interface) {
+    .timeline-container {
+      .topic-timeline {
+        .timeline-controls,
+        .timeline-footer-controls {
+          button {
+            background: transparent;
+            transition: background 0.15s ease;
+            &.toggle-admin-menu {
+              @include rgba-hex(background, $theme-staff, 0.85);
+              svg {
+                fill: $light-a100;
+              }
+              &:hover {
+                background: $theme-staff !important;
+                svg {
+                  fill: $light-a100;
+                }
+              }
+            }
+            svg {
+              fill: $light-a050;
+              transition: fill 0.15s ease;
+            }
+            &:hover {
+              background: $light-a015;
+              svg {
+                fill: $light-a100;
+              }
+            }
+          }
+        }
+        .timeline-scrollarea-wrapper {
+          .timeline-date-wrapper {
+            a {
+              span {
+                color: $light-a050;
+                transition: color 0.15s ease;
+              }
+              &:hover {
+                span {
+                  color: $light-a100;
+                }
+              }
+            }
+          }
+          .timeline-scrollarea {
+            border-left: 1px solid $light-a075;
+            .timeline-scroller {
+              .timeline-handle {
+                background-color: $light-a075;
+              }
+              .timeline-scroller-content {
+                .timeline-replies {
+                  color: $light-a085;
+                }
+                .timeline-ago {
+                  color: $light-a050;
+                }
+                .back-button {
+                  background: $light-a025;
+                  span {
+                    color: $light-a085;
+                  }
+                }
+              }
+            }
+            .timeline-last-read {
+              svg {
+                color: $light-a050;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

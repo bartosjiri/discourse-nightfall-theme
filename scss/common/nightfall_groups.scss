@@ -1,0 +1,560 @@
+body {
+  &:not(.admin-interface) {
+    .groups-header {
+      .groups-header-filters {
+        .groups-header-filters-name {
+          background-color: $light-a015;
+          color: $light-a100;
+          border: 1px solid $light-a025;
+        }
+        .groups-header-filters-type {
+          .select-kit-header {
+            background: transparent;
+            border: none;
+            span {
+              color: $light-a085;
+              transition: color 0.15s ease;
+            }
+            svg {
+              fill: $light-a085;
+              transition: fill 0.15s ease;
+            }
+            &:hover {
+              span {
+                color: $light-a100;
+              }
+              svg {
+                fill: $light-a100;
+              }
+            }
+          }
+          .select-kit-body {
+            color: $dark-a100;
+          }
+        }
+      }
+      button {
+        background: $light-a025;
+        transition: background 0.15s ease;
+        span {
+          color: $light-a075;
+          transition: color 0.15s ease;
+        }
+        svg { 
+          fill: $light-a075;
+          transition: fill 0.15s ease;
+        }
+        &:hover {
+          background: $light-a050;
+          span {
+            color: $light-a100
+          }
+          svg {
+            fill: $light-a100
+          }
+        }
+      }
+    }
+    .groups-boxes {
+      .group-box {
+        background-color: $light-a005;
+        border: none;
+        transition: all 0.15s ease;
+        .group-box-inner {
+          .group-info-wrapper {
+            .group-info {
+              .group-info-details {
+                .groups-info-name {
+                  color: $light-a085;
+                }
+              }
+              .group-user-count {
+                color: $light-a075;
+                svg {
+                  fill: $light-a075;
+                }
+              }
+            }
+          }
+          .group-description {
+            // @TODO
+          }
+          .group-membership {
+            color: $light-a075;
+            svg {
+              fill: $light-a075;
+            }
+            .is-group-owner,
+            .is-group-member {
+              color: $light-a075;
+              font-weight: bold;
+            }
+          }
+        }
+        &:hover {
+          background-color: $light-a015;
+        }
+      }
+    }
+    .group {
+      .group-details-container {
+        background: transparent;
+        .group-info {
+          span {
+            .group-info-name {
+              color: $light-a085;
+            }
+          }
+          .group-info-full-name {
+            color: $light-a075;
+          }
+        }
+        .group-details-button {
+          .btn-danger {
+            background: $light-a025;
+            color: $light-a075;
+            transition: all 0.15s ease;
+            span {
+              color: $light-a075;
+              transition: all 0.15s ease;
+            }
+            svg {
+              fill: $light-a075;
+              transition: fill 0.15s ease;
+            }
+            &:hover {
+              background: $theme-danger;
+              color: $light-a100;
+              span {
+                color: $light-a100;
+              }
+              svg {
+                fill: $light-a100;
+              }
+            }
+          }
+        }
+      }
+      .user-content-wrapper {
+        .user-primary-navigation {
+          .group-nav {
+            display: inline-flex;
+            align-items: center;
+            .group-dropdown {
+              .select-kit-header {
+                background: transparent;
+                border: none;
+                // font-size: $font-up-2;
+                color: $light-a085;
+                transition: color 0.15s ease;
+                svg {
+                  fill: $light-a085;
+                  transition: fill 0.15s ease;
+                }
+                &:hover {
+                  color: $light-a100;
+                  svg {
+                    fill: $light-a100;
+                  }
+                }
+              }
+              .select-kit-body {
+                color: $dark-a100;
+                .select-kit-collection {
+                  .collection-header {
+                    .group-dropdown-filter {
+                      color: $dark-a100;
+                    }
+                  }
+                }
+              }
+            }
+            li {
+              a {
+                background: none;
+                border: none;
+                color: $light-a050;
+                transition: all 0.15s ease;
+                svg {
+                  fill: $light-a050;
+                  transition: fill 0.15s ease;
+                }
+                span {
+                  color: $light-a050;
+                  transition: color 0.15s ease;
+                }
+                &:hover {
+                  color: $light-a100;
+                  background: $light-a025;
+                  svg {
+                    fill: $light-a100;
+                  }
+                  span {
+                    color: $light-a100;
+                  }
+                }
+                &.active {
+                  color: $light-a100;
+                  svg {
+                    fill: $light-a100;
+                  }
+                  span {
+                    color: $light-a100;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .user-secondary-navigation {
+          ul {
+            li {
+              a {
+                color: $light-a050;
+                transition: color 0.15s ease;
+                &:hover {
+                  color: $light-a100;
+                }
+                &.active {
+                  color: $light-a100;
+                  font-weight: normal;
+                }
+              }
+            }
+          }
+        }
+        .user-content {
+          background: transparent;
+          .group-members-actions {
+            .group-username-filter {
+              background-color: $light-a015;
+              color: $light-a100;
+              border: 1px solid $light-a025;
+            }
+          }
+          .group-members {
+            thead {
+              th {
+                background: transparent;
+                span {
+                  color: $light-a050;
+                  transition: color 0.15s ease;
+                  svg {
+                    fill: $light-a050;
+                    transition: fill 0.15s ease;
+                  }
+                }
+                &:hover {
+                  background: transparent;
+                  span {
+                    color: $light-a100;
+                    svg {
+                      fill: $light-a100;
+                    }
+                  }
+                }
+              }
+            }
+            tbody {
+              border-top: 1px solid $light-a015;
+              tr {
+                background: transparent;
+                transition: background 0.15s ease;
+                .avatar {
+                  .user-info {
+                    .user-detail {
+                      .name-line {
+                        .username {
+                          a {
+                            color: $light-a075;
+                            transition: color 0.15s ease;
+                            &:hover {
+                              color: $light-a100;
+                            }
+                          }
+                        }
+                        .name {
+                          color: $light-a075;
+                        }
+                      }
+                      .title {
+                        // @TODO
+                      }
+                    }
+                  }
+                }
+                .group-owner {
+                  // @TODO
+                }
+                td {
+                  .text {
+                    span {
+                      color: $light-a075;
+                    }
+                  }
+                }
+                &:hover {
+                  background: $light-a005;
+                }
+              }
+            }
+          }
+          .topic-list {
+            background: $light-a005;
+          }
+          .user-stream {
+            .user-stream-item {
+              background: $light-a005;
+              border-bottom: 3px solid $dark-a015;
+              .info {
+                .time {
+                  span {
+                    color: $light-a050;
+                    // font-size: $font-0;
+                  }
+                }
+                .expand-item,
+                .collapse-item {
+                  svg {
+                    fill: $light-a050;
+                    transition: fill 0.15s ease;
+                  }
+                  &:hover {
+                    svg {
+                      fill: $light-a100;
+                    }
+                  }
+                }
+                .stream-topic-details {
+                  .stream-topic-title {
+                    .title {
+                      a {
+                        color: $light-a085;
+                        transition: color 0.15s ease;
+                        &:hover {
+                          color: $light-a100;
+                        }
+                      }
+                    }
+                  }
+                  .group-post-category {
+                    .badge-wrapper {
+                      .badge-category {
+                        .category-name {
+                          color: $light-a050;
+                          font-weight: normal;
+                        }
+                      }
+                    }
+                  }
+                  .group-member-info {
+                    display: none;
+                  }
+                }
+              }
+              .excerpt {
+                color: $light-a085;
+                a {
+                  color: $light-a100;
+                  border-bottom: 1px solid $light-a025;
+                  transition: all 0.15s ease;
+                  &:hover {
+                    border-bottom: 1px solid $light-a100;
+                  }
+                }
+                .onebox {
+                  .source {
+                    a {
+                      transition: color 0.15s ease;
+                      border-bottom: none;
+                      &:hover {
+                        color: $light-a100;
+                        border-bottom: none;
+                      }
+                    }
+                  }
+                  .onebox-body {
+                    h3,
+                    h4 {
+                      a {
+                        transition: color 0.15s ease;
+                        border-bottom: none;
+                        &:hover {
+                          color: $light-a100;
+                          border-bottom: none;
+                        }
+                      }
+                    }
+                    p {
+                      .label1,
+                      .label2 {
+                        color: $light-a050;
+                      }
+                    }
+                  }
+                }
+                .quote {
+                  background: transparent;
+                  border-left: 5px solid $light-a015;
+                  color: $light-a085;
+                  .title {
+                    background: $dark-a015;
+                    border-left: none;
+                    color: $light-a085;
+                    font-weight: bold;
+                    .quote-controls {
+                      color: $light-a050;
+                      transition: color 0.15s ease;
+                      svg {
+                        fill: $light-a050;
+                        transition: fill 0.15s ease;
+                      }
+                      &:hover {
+                        color: $light-a100;
+                        svg {
+                          fill: $light-a100;
+                        }
+                      }
+                    }
+                  }
+                  blockquote {
+                    background: $dark-a015;
+                    border-left: none;
+                  }
+                }
+              }
+            }
+          }
+          .groups-form {
+            .group-form-bio {
+              padding: 0;
+              border: none;
+              .d-editor-container {
+                .d-editor-textarea-wrapper {
+                  background: $light-a015;
+                  border: 1px solid $light-a050;
+                  .d-editor-button-bar {
+                    border-bottom: 1px solid $light-a050;
+                    button {
+                      background: transparent;
+                      transition: all 0.15s ease;
+                      svg {
+                        fill: $light-a050;
+                        transition: fill 0.15s ease;
+                      }
+                      &:hover {
+                        background: $light-a050;
+                        svg {
+                          fill: $light-a100;
+                        }
+                      }
+                    }
+                    .d-editor-space {
+                      border-left: 1px solid $light-a050;
+                    }
+                  }
+                  textarea {
+                    color: $light-a100;
+                  }
+                }
+                .d-editor-preview {
+                  background: $light-a015;
+                  a {
+                    color: $light-a100;
+                    border-bottom: 1px solid $light-a025;
+                    transition: all 0.15s ease;
+                    &:hover {
+                      border-bottom: 1px solid $light-a100;
+                    }
+                  }
+                }
+              }
+              .d-editor-modals {
+                color: $dark-a100;
+                input {
+                  color: $dark-a100;
+                  border: 1px solid $dark-a100;
+                }
+                .controls {
+                  button {
+                    &:not(.btn-primary) {
+                      background: $dark-a015;
+                      color: $dark-a100;
+                      span {
+                        color: $dark-a100;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .control-group {
+              .select-kit {
+                background: transparent;
+                .select-kit-header {
+                  background-color: $light-a015;
+                  color: $light-a100;
+                  border: 1px solid $light-a025;
+                  svg {
+                    fill: $light-a100;
+                  }
+                  .filter-input {
+                    background-color: transparent;
+                    border: none;
+                  }
+                  .selected-category {
+                    .body {
+                      background: transparent;
+                      .category-name {
+                        color: $light-a085;
+                      }
+                      svg {
+                        fill: $light-a050;
+                        transition: fill 0.15s ease;
+                        &:hover {
+                          fill: $light-a100;
+                        }
+                      }
+                    }
+                  }
+                }
+                .select-kit-body {
+                  color: $dark-a100;
+                }
+              }
+              button,
+              .btn-default {
+                &:not(.btn-primary) {
+                  background: $light-a025;
+                  color: $light-a075;
+                  transition: all 0.15s ease;
+                  span {
+                    color: $light-a075;
+                    transition: all 0.15s ease;
+                  }
+                  svg {
+                    fill: $light-a075;
+                    transition: fill 0.15s ease;
+                  }
+                  &:hover {
+                    background: $light-a025;
+                    color: $light-a100;
+                    span {
+                      color: $light-a100;
+                    }
+                    svg {
+                      fill: $light-a100;
+                    }
+                  }
+                }
+              }
+              .control-instructions {
+                color: $light-a050;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

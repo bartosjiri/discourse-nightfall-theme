@@ -1,0 +1,101 @@
+body {
+  &:not(.admin-interface) {
+    .body-page {
+      .nav-pills {
+        .nav-item-about,
+        .nav-item-faq,
+        .nav-item-tos,
+        .nav-item-privacy {
+          a {
+            background: transparent;
+            border: none;
+            color: $light-a050;
+            transition: all 0.15s ease;
+            svg {
+              fill: $light-a050;
+              transition: fill 0.15s ease;
+            }
+            span {
+              color: $light-a050;
+              transition: color 0.15s ease;
+            }
+            &:hover {
+              color: $light-a100;
+              background: $light-a025;
+              svg {
+                fill: $light-a100;
+              }
+              span {
+                color: $light-a100;
+              }
+            }
+            &.active {
+              color: $light-a100;
+              svg {
+                fill: $light-a100;
+              }
+              span {
+                color: $light-a100;
+              }
+            }
+          }
+        }
+      }
+      .about {
+        .user-detail {
+          .name-line {
+            .username {
+              a {
+                color: $light-a075;
+                transition: color 0.15s ease;
+                &:hover {
+                  color: $light-a100;
+                }
+              }
+            }
+            .name {
+              color: $light-a075;
+            }
+          }
+        }
+        table {
+          tr {
+            th {
+              color: $light-a050;
+            }
+          }
+        }
+        p {
+          a {
+            color: $light-a100;
+            border-bottom: 1px solid $light-a025;
+            transition: all 0.15s ease;
+            &:hover {
+              border-bottom: 1px solid $light-a100;
+            }
+          }
+        }
+      }
+      div {
+        h2,
+        h3 {
+          a {
+            color: $light-a100;
+          }
+        }
+        p,
+        ul li,
+        ul li p {
+          a {
+            color: $light-a100;
+            border-bottom: 1px solid $light-a025;
+            transition: all 0.15s ease;
+            &:hover {
+              border-bottom: 1px solid $light-a100;
+            }
+          }
+        }
+      }
+    }
+  }
+}

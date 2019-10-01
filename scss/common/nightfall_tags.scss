@@ -1,0 +1,46 @@
+body {
+  &:not(.admin-interface) {
+    .tag-sort-options {
+      // font-size: $font-up-2;
+      span {
+        a {
+          // font-size: $font-down-1;
+          color: $light-a050;
+          transition: color 0.15s ease;
+          text-decoration: none;
+          &:hover {
+            color: $light-a100;
+          }
+        }
+        &.active {
+          a {
+            // font-size: $font-down-1;
+            color: $light-a085;
+            font-weight: normal;
+            &:hover {
+              color: $light-a100;
+            }
+          }
+        }
+      }
+    }
+    .tag-list {
+      h3 {
+        // font-size: $font-up-2;
+      }
+      .tag-box {
+        a {
+          // font-size: $font-up-1;
+          color: $light-a085;
+          transition: color 0.15s ease;
+          &:hover {
+            color: $light-a100;
+          }
+        }
+        .tag-count {
+          color: $light-a050;
+        }
+      }
+    }
+  }
+}

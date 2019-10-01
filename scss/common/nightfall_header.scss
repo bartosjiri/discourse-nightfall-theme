@@ -1,0 +1,180 @@
+body {
+  &:not(.admin-interface) {
+    .d-header {
+      background: $theme-secondary;
+      .title {
+        a {
+          color: $light-a100;
+        }
+      }
+      .extra-info-wrapper {
+        .title-wrapper {
+          h1 {
+            .topic-statuses {
+              a {
+                svg {
+                  fill: $light-a100;
+                }
+              }
+            }
+            .topic-link {
+              color: $light-a100;
+            }
+          }
+          .categories-wrapper {
+            .badge-wrapper {
+              .badge-category {
+                color: $light-a075;
+                svg {
+                  fill: $light-a075;
+                }
+                span {
+                  color: $light-a075;
+                }
+              }
+            }
+          }
+          .discourse-tags {
+            a {
+              color: $light-a050 !important;
+            }
+          }
+        }
+      }
+      .panel {
+        .d-header-icons {
+          li {
+            a {
+              svg {
+                fill: $light-a075;
+                transition: fill 0.15s ease;
+              }
+              .badge-notification,
+              .unread-notifications {
+                background-color: $light-a085;
+                color: $dark-a100;
+              }
+              &:hover {
+                background: $light-a025;
+                svg {
+                  fill: $light-a100;
+                }
+              }
+            }
+            &.active {
+              a {
+                svg {
+                  fill: $theme-secondary;
+                }
+              }
+            }
+          }
+        }
+        .search-menu {
+          .menu-panel {
+            color: $dark-a075;
+            .results {
+              .item {
+                &:hover {
+                  @include rgba-hex(background, $theme-primary, 0.15);
+                  a {
+                    &.widget-link {
+                      background-color: transparent;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .hamburger-panel {
+          .menu-panel {
+            .panel-body-contents {
+              .menu-links {
+                li {
+                  &:hover {
+                    @include rgba-hex(background, $theme-primary, 0.15);
+                    a {
+                      &.widget-link {
+                        background-color: transparent;
+                      }
+                    } 
+                  }
+                }
+              }
+            }
+          }
+        }
+        .user-menu {
+          .menu-panel {
+            .menu-links-header {
+              li {
+                &:not(.glyphs) {
+                  a {
+                    svg {
+                      fill: $dark-a075;
+                    }
+                    span {
+                      color: $dark-a075;
+                    }
+                  }
+                  &:hover {
+                    @include rgba-hex(background, $theme-primary, 0.15);
+                    a {
+                      &.widget-link {
+                        background-color: transparent;
+                      }
+                    } 
+                  }
+                }
+                .user-bookmarks-link,
+                .user-pms-link,
+                .user-preferences-link {
+                  svg {
+                    fill: $dark-a075;
+                  }
+                  span {
+                    color: $dark-a075;
+                  }
+                  &:hover {
+                    @include rgba-hex(background, $theme-primary, 0.15);
+                  }
+                }
+              }
+            }
+            .notifications {
+              li {
+                &:not(.read) {
+                  @include rgba-hex(background, $theme-primary, 0.15);
+                }
+                &:hover {
+                  @include rgba-hex(background, $theme-primary, 0.15);
+                  a {
+                    &.widget-link {
+                      background-color: transparent;
+                    }
+                  } 
+                }
+              }
+            }
+            .logout-link,
+            .dismiss-link {
+              .menu-links {
+                li {
+                  &:hover {
+                    @include rgba-hex(background, $theme-primary, 0.15);
+                    a {
+                      &.widget-link {
+                        background-color: transparent;
+                      }
+                    } 
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

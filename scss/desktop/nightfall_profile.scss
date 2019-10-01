@@ -1,0 +1,30 @@
+body {
+  &:not(.admin-interface) {
+    .user-main {
+      .user-content-wrapper {
+        .user-content {
+          .user-stream {
+            .user-stream-item {
+              .info {
+                .time {
+                  span {
+                    font-size: $font-0;
+                  }
+                }
+              }
+            }
+          }
+          .notification-history {
+            .notification {
+              span {
+                span {
+                  font-size: $font-up-1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+// ------------------------------------------------------------------
+// THEME BACKGROUNDS
+// ------------------------------------------------------------------
+
+// Here you can enable images as backgrounds for the header and body.
+// All images you want to use in the theme need to be in the assets
+// folder and included in the "about.json" file as following:
+// "assets": {
+//     "body-background": "assets/body-background.jpg",
+//     "header-background": "assets/header-background.jpg"
+// }
+// After your images are included, you can enable them by
+// uncommenting one or more of the following code blocks:
+
+
+// To enable body image background, uncomment code block bellow:
+// body {
+//   &:not(.admin-interface) {
+//     background: url($body-background);
+//     background-repeat: no-repeat;
+//     background-attachment: fixed;
+//     background-position: center;
+//   }
+// }
+
+
+// To enable header image background, uncomment code block bellow:
+// body {
+//   &:not(.admin-interface) {
+//     .d-header {
+//       background: url($header-background);
+//       background-position: center;
+//     }
+//   }
+// }

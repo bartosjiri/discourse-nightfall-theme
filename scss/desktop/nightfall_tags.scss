@@ -1,0 +1,27 @@
+body {
+  &:not(.admin-interface) {
+    .tag-sort-options {
+      font-size: $font-up-2;
+      span {
+        a {
+          font-size: $font-down-1;
+        }
+        &.active {
+          a {
+            font-size: $font-down-1;
+          }
+        }
+      }
+    }
+    .tag-list {
+      h3 {
+        font-size: $font-up-2;
+      }
+      .tag-box {
+        a {
+          font-size: $font-up-1;
+        }
+      }
+    }
+  }
+}

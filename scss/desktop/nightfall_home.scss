@@ -1,0 +1,91 @@
+body {
+  &:not(.admin-interface) {
+    #list-area {
+      .category-list {
+        tbody {
+          tr {
+            .category {
+              .category-text-title {
+                .category-name {
+                  font-size: $font-up-1;
+                }
+              }
+              .category-description {
+                font-size: $font-up-1;
+              }
+              .subcategories {
+                .subcategory {
+                  .badge-wrapper {
+                    .category-name {
+                      font-size: $font-up-2;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .categories-and-latest,
+      .categories-and-top {
+        .category-list {
+          tbody {
+            tr {
+              .category {
+                .category-text-title {
+                  .category-name {
+                    font-size: $font-up-1;
+                  }
+                }
+                .category-description {
+                  font-size: $font-up-1;
+                }
+                .subcategories {
+                  .subcategory {
+                    .badge-wrapper {
+                      .category-name {
+                        font-size: $font-up-2;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .latest-topic-list,
+        .top-topic-list {
+          .latest-topic-list-item {
+            .main-link {
+              .top-row {
+                .title {
+                  font-size: $font-up-1;
+                }
+              }
+              .bottom-row {
+                font-size: $font-0;
+                .badge-wrapper {
+                  .badge-category {
+                    font-size: $font-up-2;
+                  }
+                }
+              }
+            }
+            .topic-stats {
+              .posts {
+                .badge-posts {
+                  font-size: $font-up-1;
+                }
+              }
+              .topic-last-activity {
+                a {
+                  font-size: $font-up-1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

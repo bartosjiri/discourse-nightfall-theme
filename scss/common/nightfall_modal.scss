@@ -1,0 +1,8 @@
+body {
+  &:not(.admin-interface) {
+    .modal,
+    .modal-inner-container {
+      color: $dark-a100;
+    }
+  }
+}

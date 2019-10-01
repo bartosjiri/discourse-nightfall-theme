@@ -1,0 +1,1113 @@
+body {
+  &:not(.admin-interface) {
+    .user-main {
+      .about {
+        .details {
+          background: transparent;
+          border-bottom: 1px solid $light-a015;
+          .primary {
+            .controls {
+              ul {
+                li {
+                  a {
+                    background: $light-a025;
+                    color: $light-a100;
+                    transition: all 0.15s ease;
+                    svg {
+                      fill: $light-a100;
+                      transition: fill 0.15s ease;
+                    }
+                    &:hover {
+                      background: $light-a050;
+                      color: $light-a100;
+                      svg {
+                        fill: $light-a100;
+                      }
+                    }
+                  }
+                  .select-kit {
+                    .select-kit-header {
+                      background: $light-a015;
+                      color: $light-a075;
+                      transition: all 0.15s ease;
+                      span {
+                        color: $light-a075;
+                        transition: color 0.15s ease;
+                      }
+                      svg {
+                        fill: $light-a075;
+                        transition: fill 0.15s ease;
+                      }
+                      &:hover {
+                        background: $light-a025;
+                        color: $light-a100;
+                        svg {
+                          fill: $light-a100;
+                        }
+                        span {
+                          color: $light-a100;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .primary-textual {
+              color: $light-a085;
+              .location-and-website {
+                .user-profile-website {
+                  a {
+                    color: $light-a085;
+                    border-bottom: 1px solid $light-a025;
+                    text-decoration: none;
+                    transition: all 0.15s ease;
+                    &:hover {
+                      color: $light-a100;
+                      border-bottom: 1px solid $light-a100;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .secondary {
+            border-top: 1px solid $light-a015;
+            dl {
+              dt {
+                color: $light-a085;
+              }
+              dd {
+                color: $light-a075;
+                span {
+                  color: $light-a075;
+                  a {
+                    color: $light-a075;
+                    border-bottom: 1px solid $light-a025;
+                    transition: all 0.15s ease;
+                    &:hover {
+                      color: $light-a100;
+                      border-bottom: 1px solid $light-a100;
+                    }
+                  }
+                }
+                &.groups {
+                  a {
+                    color: $light-a075;
+                    transition: all 0.15s ease;
+                    &:hover {
+                      color: $light-a100;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .staff-counters {
+          background: $light-a025;
+        }
+      }
+      .user-content-wrapper {
+        .user-primary-navigation {
+          .nav-pills {
+            li {
+              a {
+                background: transparent;
+                border: none;
+                color: $light-a050;
+                transition: all 0.15s ease;
+                svg {
+                  fill: $light-a050;
+                  transition: fill 0.15s ease;
+                }
+                span {
+                  color: $light-a050;
+                  transition: color 0.15s ease;
+                }
+                &:hover {
+                  color: $light-a100;
+                  background: $light-a025;
+                  svg {
+                    fill: $light-a100;
+                  }
+                  span {
+                    color: $light-a100;
+                  }
+                }
+                &.active {
+                  color: $light-a100;
+                  svg {
+                    fill: $light-a100;
+                  }
+                  span {
+                    color: $light-a100;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .user-secondary-navigation {
+          ul {
+            li {
+              a {
+                color: $light-a050;
+                transition: color 0.15s ease;
+                &:hover {
+                  color: $light-a100;
+                }
+                &.active {
+                  color: $light-a100;
+                  font-weight: normal;
+                }
+              }
+            }
+            span {
+              li {
+                a {
+                  color: $light-a050;
+                  transition: color 0.15s ease;
+                  svg {
+                    fill: $light-a050;
+                    transition: fill 0.15s ease;
+                  }
+                  &:hover {
+                    color: $light-a100;
+                    svg {
+                      fill: $light-a100;
+                    }
+                  }
+                  &.active {
+                    color: $light-a100;
+                    font-weight: normal;
+                    svg {
+                      fill: $light-a100;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .user-additional-controls {
+          button {
+            background: $light-a015;
+            span {
+              color: $light-a075;
+              transition: all 0.15s ease;
+            }
+            svg {
+              fill: $light-a075;
+              transition: fill 0.15s ease;
+            }
+            &:hover {
+              background: $light-a025;
+              span {
+                color: $light-a100;
+              }
+              svg {
+                fill: $light-a100;
+              }
+            }
+          }
+        }
+        .user-content {
+          background-color: transparent;
+          .stats-section {
+            ul {
+              li {
+                .user-stat,
+                a .user-stat {
+                  .value {
+                    span {
+                      color: $light-a085;
+                    }
+                  }
+                  .label {
+                    color: $light-a050;
+                    svg {
+                      fill: $light-a050;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .top-section {
+            background: $light-a005;
+            padding: 10px;
+            .replies-section,
+            .topics-section {
+              ul {
+                li {
+                  border-left: 2px solid $light-a025;
+                  .topic-info {
+                    span {
+                      color: $light-a075;
+                    }
+                    svg {
+                      fill: $light-a075;
+                    }
+                  }
+                  a {
+                    color: $light-a085;
+                    transition: color 0.15s ease;
+                    &:hover {
+                      color: $light-a100;
+                    }
+                  }
+                }
+              }
+              p {
+                .more {
+                  color: $light-a085;
+                  transition: color 0.15s ease;
+                  &:hover {
+                    color: $light-a100;
+                  }
+                }
+              }
+            }
+            .links-section {
+              ul {
+                li {
+                  border-left: 2px solid $light-a025;
+                  .domain {
+                    color: $light-a075;
+                  }
+                  .badge-notification {
+                    background: $light-a025;
+                    color: $light-a085;
+                  }
+                  a {
+                    color: $light-a085;
+                    transition: color 0.15s ease;
+                    &:hover {
+                      color: $light-a100;
+                    }
+                  }
+                }
+              }
+            }
+            .replied-section,
+            .liked-by-section,
+            .liked-section {
+              ul {
+                li {
+                  border-left: 2px solid $light-a025;
+                  .user-info {
+                    .user-detail {
+                      .name-line {
+                        .username {
+                          a {
+                            color: $light-a085;
+                            transition: color 0.15s ease;
+                            &:hover {
+                              color: $light-a100;
+                            }
+                          }
+                        }
+                        .name {
+                          color: $light-a075;
+                        }
+                      }
+                      .details {
+                        svg {
+                          fill: $light-a075;
+                        }
+                        span {
+                          span {
+                            color: $light-a075;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .summary-category-list {
+              table {
+                thead {
+                  th {
+                    color: $light-a075;
+                  }
+                }
+                tbody {
+                  border-top: 1px solid $light-a015;
+                  tr {
+                    .category-link {
+                      a {
+                        .badge-category {
+                          .category-name {
+                            color: $light-a085;
+                            transition: color 0.15s ease;
+                          }
+                        }
+                        &:hover {
+                          .badge-category {
+                            .category-name {
+                              color: $light-a100;
+                            }
+                          }
+                        }
+                      }
+                    }
+                    .topic-count {
+                      a {
+                        color: $light-a085;
+                      }
+                    }
+                    .reply-count {
+                      a {
+                        color: $light-a085;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            &.badges-section {
+             .badge-card {
+                background-color: $light-a005;
+                border: none;
+                .badge-contents {
+                  .badge-info {
+                    .badge-info-item {
+                      h3 {
+                        a {
+                          color: $light-a085;
+                          transition: color 0.15s ease;
+                          &:hover {
+                            color: $light-a100;
+                          }
+                        }
+                      }
+                      .badge-summary {
+                        color: $light-a085;
+                        a {
+                          color: $light-a100;
+                          border-bottom: 1px solid $light-a025;
+                          transition: all 0.15s ease;
+                          &:hover {
+                            border-bottom: 1px solid $light-a100;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                .grant-count {
+                  color: $light-a050;
+                  font-weight: normal;
+                }
+                .check-display {
+                  background-color: $light-a015;
+                }
+              }
+              p {
+                .more {
+                  color: $light-a085;
+                  transition: color 0.15s ease;
+                  &:hover {
+                    color: $light-a100;
+                  }
+                }
+              }
+            }
+          }
+          .user-stream {
+            .user-stream-item {
+              background: $light-a005;
+              border-bottom: 3px solid $dark-a015;
+              .info {
+                .time {
+                  span {
+                    color: $light-a050;
+                    // font-size: $font-0;
+                  }
+                }
+                .expand-item,
+                .collapse-item {
+                  svg {
+                    fill: $light-a050;
+                    transition: fill 0.15s ease;
+                  }
+                  &:hover {
+                    svg {
+                      fill: $light-a100;
+                    }
+                  }
+                }
+                .stream-topic-details {
+                  .stream-topic-title {
+                    .title {
+                      a {
+                        color: $light-a085;
+                        transition: color 0.15s ease;
+                        &:hover {
+                          color: $light-a100;
+                        }
+                      }
+                    }
+                  }
+                  .category {
+                    .badge-wrapper {
+                      .badge-category {
+                        .category-name {
+                          color: $light-a050;
+                          font-weight: normal;
+                        }
+                      }
+                    }
+                  }
+                  .group-member-info {
+                    display: none;
+                  }
+                }
+              }
+              .excerpt {
+                color: $light-a085;
+                a {
+                  color: $light-a100;
+                  border-bottom: 1px solid $light-a025;
+                  transition: all 0.15s ease;
+                  &:hover {
+                    border-bottom: 1px solid $light-a100;
+                  }
+                }
+                .onebox {
+                  .source {
+                    a {
+                      transition: color 0.15s ease;
+                      border-bottom: none;
+                      &:hover {
+                        color: $light-a100;
+                        border-bottom: none;
+                      }
+                    }
+                  }
+                  .onebox-body {
+                    h3,
+                    h4 {
+                      a {
+                        transition: color 0.15s ease;
+                        border-bottom: none;
+                        &:hover {
+                          color: $light-a100;
+                          border-bottom: none;
+                        }
+                      }
+                    }
+                    p {
+                      .label1,
+                      .label2 {
+                        color: $light-a050;
+                      }
+                    }
+                  }
+                }
+                .quote {
+                  background: transparent;
+                  border-left: 5px solid $light-a015;
+                  color: $light-a085;
+                  .title {
+                    background: $dark-a015;
+                    border-left: none;
+                    color: $light-a085;
+                    font-weight: bold;
+                    .quote-controls {
+                      color: $light-a050;
+                      transition: color 0.15s ease;
+                      svg {
+                        fill: $light-a050;
+                        transition: fill 0.15s ease;
+                      }
+                      &:hover {
+                        color: $light-a100;
+                        svg {
+                          fill: $light-a100;
+                        }
+                      }
+                    }
+                  }
+                  blockquote {
+                    background: $dark-a015;
+                    border-left: none;
+                  }
+                }
+              }
+              .user-stream-item-actions {
+                svg {
+                  fill: $light-a050;
+                }
+                .avatar-link {
+                  .avatar-wrapper {
+                    background-color: transparent;
+                  }
+                }
+                button {
+                  background: $light-a015;
+                  color: $light-a075;
+                  transition: all 0.15s ease;
+                  span {
+                    color: $light-a075;
+                    transition: all 0.15s ease;
+                  }
+                  svg {
+                    fill: $light-a075;
+                    transition: fill 0.15s ease;
+                  }
+                  &:hover {
+                    background: $light-a025;
+                    color: $light-a100;
+                    span {
+                      color: $light-a100;
+                    }
+                    svg {
+                      fill: $light-a100;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .topic-list {
+            background-color: $light-a005;
+          }
+          .notification-history {
+            .notification {
+              background-color: $light-a005;
+              border-bottom: 1px solid $dark-a015;
+              li {
+                a {
+                  color: $light-a085;
+                  transition: color 0.15s ease;
+                  svg {
+                    fill: $light-a085;
+                    transition: fill 0.15s ease;
+                  }
+                  span {
+                    color: $light-a085;
+                    transition: color 0.15s ease;
+                    &.time {
+                      color: $light-a050;
+                      transition: color 0.15s ease;
+                      &:hover {
+                        color: $light-a100;
+                      }
+                    }
+                  }
+                  &:hover {
+                    color: $light-a100;
+                    svg {
+                      fill: $light-a100;
+                    }
+                    span {
+                      color: $light-a085;
+                    }
+                  }
+                }
+              }
+              span {
+                span {
+                  // font-size: $font-up-1;
+                  color: $light-a075;
+                }
+              }
+              &.unread {
+                background-color: $light-a005;
+              }
+            }
+          }
+          .list-actions {
+            button {
+              background: $light-a015;
+              color: $light-a075;
+              transition: all 0.15s ease;
+              span {
+                color: $light-a075;
+                transition: all 0.15s ease;
+              }
+              svg {
+                fill: $light-a075;
+                transition: fill 0.15s ease;
+              }
+              &:hover {
+                background: $light-a025;
+                color: $light-a100;
+                span {
+                  color: $light-a100;
+                }
+                svg {
+                  fill: $light-a100;
+                }
+              }
+            }
+          }
+          .badge-card {
+            background-color: $light-a005;
+            border: none;
+            .badge-contents {
+              .badge-info {
+                .badge-info-item {
+                  h3 {
+                    a {
+                      color: $light-a085;
+                      transition: color 0.15s ease;
+                      &:hover {
+                        color: $light-a100;
+                      }
+                    }
+                  }
+                  .badge-summary {
+                    color: $light-a085;
+                    a {
+                      color: $light-a100;
+                      border-bottom: 1px solid $light-a025;
+                      transition: all 0.15s ease;
+                      &:hover {
+                        border-bottom: 1px solid $light-a100;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .grant-count {
+              color: $light-a050;
+              font-weight: normal;
+            }
+            .check-display {
+              background-color: $light-a015;
+            }
+          }
+          &.user-preferences {
+            background: $light-a005;
+            .form-vertical {
+              .control-group {
+                label {
+                  color: $light-a085;
+                }
+                .controls {
+                  .static {
+                    color: $light-a085;
+                  }
+                  input {
+                    background-color: $light-a015;
+                    color: $light-a100;
+                    border: 1px solid $light-a025;
+                  }
+                  .select-kit {
+                    background: transparent;
+                    .select-kit-header {
+                      background-color: $light-a015;
+                      color: $light-a100;
+                      border: 1px solid $light-a025;
+                      svg {
+                        fill: $light-a100;
+                      }
+                      .filter-input {
+                        background-color: transparent;
+                        border: none;
+                      }
+                      .selected-category {
+                        .body {
+                          background: transparent;
+                          .category-name {
+                            color: $light-a085;
+                          }
+                          svg {
+                            fill: $light-a050;
+                            transition: fill 0.15s ease;
+                            &:hover {
+                              fill: $light-a100;
+                            }
+                          }
+                        }
+                      }
+                    }
+                    .select-kit-body {
+                      color: $dark-a100;
+                    }
+                  }
+                  button,
+                  .btn-default {
+                    &:not(.btn-primary) {
+                      background: $light-a015;
+                      color: $light-a075;
+                      transition: all 0.15s ease;
+                      span {
+                        color: $light-a075;
+                        transition: all 0.15s ease;
+                      }
+                      svg {
+                        fill: $light-a075;
+                        transition: fill 0.15s ease;
+                      }
+                      &:hover {
+                        background: $light-a025;
+                        color: $light-a100;
+                        span {
+                          color: $light-a100;
+                        }
+                        svg {
+                          fill: $light-a100;
+                        }
+                      }
+                    }
+                  }
+                  .show-tracking {
+                    color: $light-a050;
+                  }
+                  .ac-wrap {
+                    background: transparent;
+                    input {
+                      background-color: transparent;
+                      border: none;
+                    }
+                    .item {
+                      .remove {
+                        border: none;
+                        transition: all 0.15s ease;
+                        svg {
+                          fill: $light-a050;
+                          transition: fill 0.15s ease;
+                        }
+                        &:hover {
+                          background: transparent;
+                          svg {
+                            fill: $light-a100;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  .ignored-list {
+                    background-color: $light-a015;
+                  }
+                }
+                .instructions {
+                  color: $light-a050;
+                }
+                &.pref-auth-tokens {
+                  .auth-tokens {
+                    .auth-token {
+                      border-bottom: 1px solid $light-a015;
+                      .auth-token-icon {
+                        svg {
+                          fill: $light-a075;
+                        }
+                      }
+                      .auth-token-dropdown {
+                        button {
+                          background: $light-a015;
+                          color: $light-a075;
+                          transition: all 0.15s ease;
+                          span {
+                            color: $light-a075;
+                            transition: all 0.15s ease;
+                          }
+                          svg {
+                            fill: $light-a075;
+                            transition: fill 0.15s ease;
+                          }
+                          &:hover {
+                            background: $light-a025;
+                            color: $light-a100;
+                            span {
+                              color: $light-a100;
+                            }
+                            svg {
+                              fill: $light-a100;
+                            }
+                          }
+                        }
+                      }
+                      .auth-token-first {
+                        color: $light-a075;
+                        span {
+                          color: $light-a075;
+                        }
+                      }
+                      .auth-token-second {
+                        color: $light-a050;
+                        span {
+                          color: $light-a050;
+                        }
+                      }
+                    }
+                  }
+                  .text-danger {
+                    @include rgba-hex(color, $theme-danger, 0.75);
+                    transition: color 0.15s ease;
+                    svg {
+                      transition: fill 0.15s ease;
+                    }
+                    &:hover {
+                      color: $theme-danger;
+                      svg {
+                        fill: $theme-danger;
+                      }
+                    }
+                  }
+                }
+                &.pref-bio {
+                  .bio-composer {
+                    padding: 0;
+                    border: none;
+                    .d-editor-container {
+                      .d-editor-textarea-wrapper {
+                        background: $light-a015;
+                        border: 1px solid $light-a050;
+                        .d-editor-button-bar {
+                          border-bottom: 1px solid $light-a050;
+                          button {
+                            background: transparent;
+                            transition: all 0.15s ease;
+                            svg {
+                              fill: $light-a050;
+                              transition: fill 0.15s ease;
+                            }
+                            &:hover {
+                              background: $light-a050;
+                              svg {
+                                fill: $light-a100;
+                              }
+                            }
+                          }
+                          .d-editor-spacer {
+                            border-left: 1px solid $light-a050;
+                          }
+                        }
+                        textarea {
+                          color: $light-a100;
+                        }
+                      }
+                      .d-editor-preview {
+                        color: $light-a085;
+                        background: $light-a015;
+                        a {
+                          color: $light-a100;
+                          border-bottom: 1px solid $light-a025;
+                          transition: all 0.15s ease;
+                          &:hover {
+                            border-bottom: 1px solid $light-a100;
+                          }
+                        }
+                      }
+                    }
+                    .d-editor-modals {
+                      input {
+                        color: $dark-a100;
+                        border: 1px solid $dark-a100;
+                      }
+                      .controls {
+                        button {
+                          &:not(.btn-primary) {
+                            background: $dark-a015;
+                            color: $dark-a100;
+                            span {
+                              color: $dark-a100;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              .warning-wrap {
+                .warning {
+                  background-color: $light-a025;
+                }
+              }
+            }
+          }
+        }
+        .user-stream {
+          .user-stream-item {
+            background: $light-a005;
+            border-bottom: 3px solid $dark-a015;
+            .info {
+              .time {
+                span {
+                  color: $light-a050;
+                  // font-size: $font-0;
+                }
+              }
+              .expand-item,
+              .collapse-item {
+                svg {
+                  fill: $light-a050;
+                  transition: fill 0.15s ease;
+                }
+                &:hover {
+                  svg {
+                    fill: $light-a100;
+                  }
+                }
+              }
+              .stream-topic-details {
+                .stream-topic-title {
+                  .title {
+                    a {
+                      color: $light-a085;
+                      transition: color 0.15s ease;
+                      &:hover {
+                        color: $light-a100;
+                      }
+                    }
+                  }
+                }
+                .category {
+                  .badge-wrapper {
+                    .badge-category {
+                      .category-name {
+                        color: $light-a050;
+                        font-weight: normal;
+                      }
+                    }
+                  }
+                }
+                .group-member-info {
+                  display: none;
+                }
+              }
+            }
+            .excerpt {
+              color: $light-a085;
+              a {
+                color: $light-a100;
+                border-bottom: 1px solid $light-a025;
+                transition: all 0.15s ease;
+                &:hover {
+                  border-bottom: 1px solid $light-a100;
+                }
+              }
+              .onebox {
+                .source {
+                  a {
+                    transition: color 0.15s ease;
+                    border-bottom: none;
+                    &:hover {
+                      color: $light-a100;
+                      border-bottom: none;
+                    }
+                  }
+                }
+                .onebox-body {
+                  h3,
+                  h4 {
+                    a {
+                      transition: color 0.15s ease;
+                      border-bottom: none;
+                      &:hover {
+                        color: $light-a100;
+                        border-bottom: none;
+                      }
+                    }
+                  }
+                  p {
+                    .label1,
+                    .label2 {
+                      color: $light-a050;
+                    }
+                  }
+                }
+              }
+              .quote {
+                background: transparent;
+                border-left: 5px solid $light-a015;
+                color: $light-a085;
+                .title {
+                  background: $dark-a015;
+                  border-left: none;
+                  color: $light-a085;
+                  font-weight: bold;
+                  .quote-controls {
+                    color: $light-a050;
+                    transition: color 0.15s ease;
+                    svg {
+                      fill: $light-a050;
+                      transition: fill 0.15s ease;
+                    }
+                    &:hover {
+                      color: $light-a100;
+                      svg {
+                        fill: $light-a100;
+                      }
+                    }
+                  }
+                }
+                blockquote {
+                  background: $dark-a015;
+                  border-left: none;
+                }
+              }
+            }
+            .user-stream-item-actions {
+              svg {
+                fill: $light-a050;
+              }
+              .avatar-link {
+                .avatar-wrapper {
+                  background-color: transparent;
+                }
+              }
+              button {
+                background: $light-a015;
+                color: $light-a075;
+                transition: all 0.15s ease;
+                span {
+                  color: $light-a075;
+                  transition: all 0.15s ease;
+                }
+                svg {
+                  fill: $light-a075;
+                  transition: fill 0.15s ease;
+                }
+                &:hover {
+                  background: $light-a025;
+                  color: $light-a100;
+                  span {
+                    color: $light-a100;
+                  }
+                  svg {
+                    fill: $light-a100;
+                  }
+                }
+              }
+            }
+            &.deleted {
+              opacity: 1;
+              .delete-info {
+                svg {
+                  fill: $light-a085;
+                }
+                span {
+                  color: $light-a085;
+                }
+              }
+              .excerpt {
+                opacity: 0.5;
+              }
+            }
+          }
+        }
+        .user-invite-none {
+          a {
+            color: $light-a100;
+            border-bottom: 1px solid $light-a025;
+            text-decoration: none;
+            transition: all 0.15s ease;
+            &:hover {
+              border-bottom: 1px solid $light-a100;
+            }
+          }
+        }
+      }
+    }
+  }
+}

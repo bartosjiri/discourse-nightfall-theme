@@ -1,0 +1,51 @@
+body {
+  &:not(.admin-interface) {
+    .alert {
+      background-color: $light-a025;
+      color: $light-a085;
+      .close {
+        color: $primary-low-mid;
+        svg {
+          fill: $light-a050;
+          transition: fill 0.15s ease;
+          &:hover {
+            fill: $light-a100;
+          }
+        }
+      }
+      button.close {
+        background: transparent;
+      }
+      &.alert-success {
+        background-color: $success-low;
+        color: $light-a085;
+      }
+      &.alert-error {
+        background-color: $danger-low;
+        color: $light-a085;
+      }
+      &.alert-info {
+        background-color: $light-a025;
+        color: $light-a085;
+        &.clickable {
+          color: $light-a085;
+        }
+      }
+      a {
+        color: $light-a100;
+        border-bottom: 1px solid $light-a025;
+        transition: all 0.15s ease;
+        &:hover {
+          border-bottom: 1px solid $light-a100;
+        }
+      }
+    }
+    .modal-inner-container {
+      .alert-alert-error {
+        background-color: $danger;
+        color: $light-a100;
+      }
+    }
+  }
+}
+

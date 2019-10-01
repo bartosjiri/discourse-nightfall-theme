@@ -1,0 +1,26 @@
+body {
+  &:not(.admin-interface) {
+    .select-kit-body {
+      .select-kit-collection {
+        .select-kit-row {
+          .texts {
+            .desc {
+              color: $dark-a075;
+            }
+          }    
+          &.is-highlighted {
+            @include rgba-hex(background, $theme-primary, 0.15);
+          }
+          &.is-selected {
+            @include rgba-hex(background, $theme-primary, 0.15);
+          }
+        }
+      }
+    }
+    .category-status {
+      .topic-count {
+        color: $dark-a050;
+      }
+    }
+  }
+}

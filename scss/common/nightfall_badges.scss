@@ -1,0 +1,159 @@
+body {
+  &:not(.admin-interface) {
+    .cooked {
+      .badge-notification {
+        &.clicks {
+          background: $light-a025;
+          color: $light-a100;
+        }
+      }
+    }
+    .badges {
+      .badge-groups {
+        .badge-grouping {
+          .title {
+            h3 {
+              color: $light-a085;
+            }
+          }
+          .badge-group-list {
+            .badge-card {
+              background-color: $light-a005;
+              border: none;
+              .badge-contents {
+                .badge-info {
+                  .badge-info-item {
+                    h3 {
+                      a {
+                        color: $light-a085;
+                        transition: color 0.15s ease;
+                        &:hover {
+                          color: $light-a100;
+                        }
+                      }
+                    }
+                    .badge-summary {
+                      color: $light-a085;
+                      a {
+                        color: $light-a100;
+                        border-bottom: 1px solid $light-a025;
+                        transition: all 0.15s ease;
+                        &:hover {
+                          border-bottom: 1px solid $light-a100;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              .grant-count {
+                color: $light-a050;
+                font-weight: normal;
+              }
+              .check-display {
+                background-color: $light-a015;
+              }
+            }
+          }
+        }
+      }
+    }
+    .show-badge {
+      h1 {
+        color: $light-a085;
+        a {
+          color: $light-a085;
+          transition: color 0.15s ease;
+          &:hover {
+            color: $light-a100;
+          }
+        }
+      }
+      .show-badge-details {
+        .badge-card {
+          background-color: $light-a005;
+          border: none;
+          .badge-contents {
+            .badge-info {
+              .badge-info-item {
+                h3 {
+                  a {
+                    color: $light-a085;
+                  }
+                }
+                .badge-summary {
+                  color: $light-a085;
+                  a {
+                    color: $light-a100;
+                    border-bottom: 1px solid $light-a025;
+                    transition: all 0.15s ease;
+                    &:hover {
+                      border-bottom: 1px solid $light-a100;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .grant-count {
+            color: $light-a050;
+            font-weight: normal;
+          }
+          .check-display {
+            background-color: $light-a015;
+          }
+        }
+        .badge-grant-info {
+          .grant-info-item {
+            color: $light-a085;
+          }
+        }
+      }
+      .user-badges {
+        .badges-granted {
+          .user-info {
+            .user-detail {
+              .name-line {
+                .username {
+                  a {
+                    color: $light-a075;
+                    transition: color 0.15s ease;
+                    &:hover {
+                      color: $light-a100;
+                    }
+                  }
+                }
+                .name {
+                  color: $light-a075;
+                }
+              }
+              .details {
+                .granted-on {
+                  color: $light-a050;
+                }
+                .post-link {
+                  color: $light-a050;
+                  transition: color 0.15s ease;
+                  &:hover {
+                    color: $light-a075;
+                  }
+                }
+              }
+            }
+          }
+        }
+        a {
+          &.btn {
+            background: $light-a015;
+            color: $light-a075;
+            transition: all 0.15s ease;
+            &:hover {
+              background: $light-a025;
+              color: $light-a100;
+            }
+          }
+        }  
+      }
+    }
+  }
+}

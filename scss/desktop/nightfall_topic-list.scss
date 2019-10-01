@@ -1,0 +1,114 @@
+body {
+  &:not(.admin-interface) {
+    .list-controls {
+      .category-navigation,
+      .navigation-container {
+        .category-breadcrumb {
+          .category-drop {
+            .category-drop-header {
+              .selected-name {
+                .badge-category {
+                  svg {
+                    font-size: $font-up-2;
+                  }
+                  span {
+                    font-size: $font-up-4;
+                  }
+                }
+                .category-name {
+                  font-size: $font-up-4;
+                }
+              }
+            }
+          }
+          .tag-drop {
+            .tag-drop-header {
+              svg {
+                font-size: $font-up-2;
+              }
+              span {
+                font-size: $font-up-4;
+              }
+            }
+          }
+        }
+        #navigation-bar {
+          li {
+            a {
+              font-size: $font-up-2;
+            }
+          }
+        }
+      }
+    }
+    .category-list {
+      tbody {
+        .topics {
+          span {
+            font-size: $font-up-2;
+          }
+          a {
+            font-size: $font-0;
+          }
+        }
+        .latest {
+          font-size: $font-up-1;
+        }
+      }
+    }
+    .topic-list {
+      tbody {
+        .topic-list-item {
+          .main-link {
+            font-size: $font-0;
+            .link-top-line {
+              a {
+                font-size: $font-up-2;
+              }
+              .topic-post-badges {
+                a {
+                  &:not(.new-topic) {
+                    font-size: $font-up-1;
+                  } 
+                }
+              }
+            }
+            .link-bottom-line {
+              font-size: $font-0;
+              .badge-wrapper {
+                .badge-category {
+                  font-size: $font-up-2;
+                }
+              }
+            }
+          }
+          .posts,
+          .views,
+          .activity {
+            span {
+              font-size: 1.2em;
+            }  
+          }
+        }
+      }
+    }
+    .topic-list-bottom {
+      .footer-message {
+        h3 {
+          font-size: $font-up-2;
+        }
+        .education {
+          p,
+          ul li {
+            span {
+              font-size: $font-0;
+            }
+          }
+        }
+      }
+      .dismiss-read {
+        font-size: $font-up-2;
+      }
+    }
+  }
+}

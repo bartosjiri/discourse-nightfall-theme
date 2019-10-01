@@ -1,0 +1,136 @@
+body {
+  &:not(.admin-interface) {
+    .composer-fields {
+      .reply-to {
+        .reply-details {
+          .composer-action-title {
+            .select-kit {
+              .select-kit-header {
+                color: $dark-a075;
+                background: transparent;
+                transition: background 0.15s ease;
+                svg {
+                  fill: $dark-a075;
+                }
+                &:hover {
+                  @include rgba-hex(background, $theme-primary, 0.15);
+                }
+              }
+            }
+          }
+        }
+        .composer-controls {
+          button {
+            svg {
+              fill: $dark-a075;
+              transition: fill 0.15s ease;
+            }
+            &:hover {
+              svg {
+                fill: $dark-a100;
+              }
+            }
+          }
+        }
+      }
+      .category-input {
+        color: $dark-a050;
+      }
+      .mini-tag-chooser {
+        color: $dark-a050;
+      }
+    }
+    .d-editor {
+      .d-editor-modals {
+        color: $dark-a100;
+      }
+      .d-editor-container {
+        .d-editor-textarea-wrapper {
+          .d-editor-button-bar {
+            button {
+              background: transparent;
+              transition: background 0.15s ease;
+              svg {
+                fill: $dark-a075;
+              }
+              &:hover {
+                @include rgba-hex(background, $theme-primary, 0.15);
+                svg {
+                  fill: $dark-a075;
+                }
+              }
+            }
+            .d-editor-spacer {
+              border-left: 1px solid $dark-a075;
+            }
+            .select-kit {
+              color: $dark-a100;
+            }
+          }
+        }
+        .d-editor-preview-wrapper {
+          .d-editor-preview {
+            color: $dark-a100;
+            .discourse-local-date {
+              color: $dark-a100;
+              svg {
+                fill: $dark-a100;
+              }
+              span {
+                color: $dark-a100;
+              }
+            }
+            aside {
+              .title {
+                border-left: 5px solid $dark-a015;
+              }
+              blockquote {
+                background: transparent;
+                border-left: 5px solid $dark-a015;
+              }
+            }
+          }
+        }
+      }
+    }
+    .submit-panel {
+      .save-or-cancel {
+        .btn-primary {
+          svg {
+            transition: fill 0.15s ease;
+          }
+        }
+        .cancel {
+          color: $dark-a075;
+          transition: color 0.15s ease;
+          &:hover {
+            color: $dark-a100;
+          }
+        }
+      }
+      .toggle-preview {
+        color: $dark-a075;
+        transition: color 0.15s ease;
+      }
+    }
+    .composer-popup {
+      background-color: $theme-secondary;
+      a {
+        color: $light-a100;
+        border-bottom: 1px solid $light-a025;
+        transition: all 0.15s ease;
+        &:hover {
+          border-bottom: 1px solid $light-a100;
+        }
+        &.close {
+          color: $light-a100;
+          border-bottom: none;
+          transition: opacity 0.15s ease;
+          svg {
+            fill: $light-a100;
+          }
+        }
+      }
+    }
+  }
+}

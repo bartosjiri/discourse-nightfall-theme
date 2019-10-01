@@ -1,0 +1,45 @@
+body {
+  &:not(.admin-interface) {
+    .directory {
+      .total-rows {
+        color: $light-a050;
+      }
+      .me {
+        background: $light-a015;
+      }
+      .user {
+        border-top: 1px solid $light-a015;
+        .user-info {
+          .user-detail {
+            .name-line {
+              .username {
+                a {
+                  color: $light-a075;
+                }
+              }
+              .name {
+                color: $light-a075;
+              }
+            }
+          }
+        }
+        .user-stat {
+          .value {
+            span {
+              color: $light-a050;
+            }
+          }
+          .label {
+            color: $light-a050;
+            span {
+              color: $light-a050;
+            }
+            svg {
+              color: $light-a050;
+            }
+          }
+        }
+      }
+    }
+  }
+}

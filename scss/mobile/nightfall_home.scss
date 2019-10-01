@@ -1,0 +1,82 @@
+body {
+  &:not(.admin-interface) {
+    #list-area,
+    #header-list-area {
+      .category-list {
+        .category-list-item {
+          .topic-list {
+            .main-link {
+              .category-title-link {
+                .category-text-title {
+                  svg {
+                    fill: $light-a085;
+                  }
+                  .category-name {
+                    color: $light-a085;
+                  }
+                }
+              }
+            }
+            .category-topic-link {
+              border-bottom: none;
+              .main-link {
+                .topic-inset {
+                  .topic-statuses {
+                    .topic-status {
+                      svg {
+                        fill: $light-a085;
+                      }
+                    }
+                  }
+                  .title {
+                    color: $light-a085;
+                  }
+                  .age {
+                    span {
+                      color: $light-a085;
+                    }
+                  }
+                }
+              }
+              .posts {
+                .posts {
+                  .badge-posts {
+                    span {
+                      color: $light-a050;
+                      font-weight: normal;
+                    }
+                  }
+                }
+              }
+              &.visited {
+                .main-link {
+                  .topic-inset {
+                    opacity: 0.65;
+                  }
+                }
+              }
+            }
+            .subcategories-list {
+              border-top: 1px solid $light-a015;
+              .subcategories {
+                .badge-wrapper {
+                  .badge-category {
+                    .category-name {
+                      color: $light-a075;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          footer {
+            border-top: 1px solid $light-a015;
+            figure {
+              color: $light-a050;
+            }
+          }
+        }
+      }
+    }
+  }
+}

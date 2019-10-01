@@ -1,0 +1,23 @@
+html {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+body {
+  &:not(.admin-interface) {
+    color: $light-a085;
+    font-weight: 400;
+    line-height: 1.7;
+    background-color: $theme-primary;
+    hr {
+      border-top: 1px solid $light-a015;
+    }
+    tbody {
+      border-top: 3px solid $light-a015;
+    }
+    tr {
+      border-bottom: 1px solid $light-a015
+    }
+  }
+}

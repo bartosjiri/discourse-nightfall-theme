@@ -1,0 +1,101 @@
+body {
+  &:not(.admin-interface) {
+    .cakeday {
+      .nav-pills,
+      .anniversaries .nav-pills,
+      .birthdays .nav-pills {
+        li {
+          transition: background 0.15s ease;
+          a {
+            // font-size: $font-up-2;
+            color: $light-a050;
+            transition: color 0.15s ease;
+            background-color: transparent;
+            &.active {
+              color: $light-a100;
+              background-color: transparent;
+            }
+          }
+          &:hover {
+            background: $light-a025;
+            a {
+              color: $light-a100;
+              background-color: transparent;
+            }
+          }  
+        }
+      }
+      .anniversaries,
+      .birthdays {
+        .user-info-list {
+          .user-info-item {
+            .user-info {
+              .user-detail {
+                .name-line {
+                  .username {
+                    a {
+                      color: $light-a075;
+                      transition: color 0.15s ease;
+                      &:hover {
+                        color: $light-a100;
+                      }
+                    }
+                  }
+                  .name {
+                    color: $light-a075;
+                  }
+                }
+                .title {
+                  // @TODO
+                }
+                .details {
+                  color: $light-a050;
+                }
+              }
+            }
+          }
+          .user-info-empty-message {
+            h4 {
+              color: $light-a085;
+              font-weight: normal;
+            }
+          }
+        }
+        .cakeday-months {
+          display: inline-flex;
+          align-items: baseline;
+          .select-kit {
+            .select-kit-header {
+              background: transparent;
+              border: none;
+              // font-size: $font-up-2;
+              font-weight: bold;
+              color: $light-a085;
+              transition: color 0.15s ease;
+              svg {
+                fill: $light-a085;
+                transition: fill 0.15s ease;
+              }
+              &:hover {
+                color: $light-a100;
+                svg {
+                  fill: $light-a100;
+                }
+              }
+            }
+            .select-kit-body {
+              color: $dark-a100;
+              .select-kit-collection {
+                .collection-header {
+                  .group-dropdown-filter {
+                    color: $dark-a100;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

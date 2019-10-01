@@ -1,0 +1,34 @@
+body {
+  &:not(.admin-interface) {
+    .search-container {
+      .search-advanced-sidebar {
+        .search-bar {
+          input {
+            background: $light-a015;
+            border: 1px solid $light-a025;
+            color: $light-a100;
+          }
+        }
+        .search-advanced-title {
+          background: $light-a025;
+          color: $light-a085;
+          border: none;
+          svg {
+            fill: $light-a085;
+          }
+        }
+      }
+      .search-advanced {
+        .search-info {
+          .sort-by {
+            .select-kit {
+              .select-kit-header {
+                border: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

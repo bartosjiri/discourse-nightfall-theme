@@ -1,0 +1,693 @@
+body {
+  &:not(.admin-interface) {
+    .topic-post {
+      .topic-avatar {
+        border-top: 1px solid $light-a015;
+      }
+      .topic-body {
+        border-top: 1px solid $light-a015;
+        .topic-meta-data {
+          .names {
+            span {
+              a {
+                // font-size: $font-up-1;
+                color: $light-a100;
+              }
+              .svg-icon-title {
+                svg {
+                  fill: $light-a100;
+                }
+              }
+            }
+          }
+          .post-infos {
+            .reply-to-tab {
+              color: $light-a050;
+            }
+            .post-info {
+              a {
+                color: $light-a050;
+                svg {
+                  fill: $light-a050;
+                }
+              }
+              &.edits {
+                a {
+                  &:not(.heatmap-low),
+                  &:not(.heatmap-med),
+                  &:not(.heatmap-high) {
+                    svg {
+                      fill: currentColor;
+                    }     
+                  }
+                }
+              }
+            }
+            .read-state {
+              color: $light-a100;
+              svg {
+                fill: $light-a100;
+              }
+            }
+            .post-locked {
+              svg {
+                fill: $light-a085;
+              }
+            }
+            .select-posts {
+              .select-post {
+                background: $theme-secondary;
+                span {
+                  color: $light-a085;
+                }
+                &:hover {
+                  @include rgba-hex(background, $theme-secondary, 0.85);
+                }
+              }
+            }
+          }
+        }
+        .cooked {
+          // font-size: $font-up-1;
+          line-height: 1.7;
+          a {
+            color: $light-a100;
+            border-bottom: 1px solid $light-a025;
+            transition: all 0.15s ease;
+            &:hover {
+              border-bottom: 1px solid $light-a100;
+            }
+          }
+          .quote {
+            background: transparent;
+            border-left: 5px solid $light-a015;
+            color: $light-a085;
+            .title {
+              background: $dark-a015;
+              border-left: none;
+              color: $light-a085;
+              font-weight: bold;
+              .quote-controls {
+                span {
+                  svg {
+                    fill: $light-a050;
+                    transition: fill 0.15s ease;
+                  }
+                  &:hover {
+                    svg {
+                      fill: $light-a100;
+                    }
+                  }
+                }
+                a {
+                  color: $light-a050;
+                  transition: color 0.15s ease;
+                  border-bottom: none;
+                  svg {
+                    fill: $light-a050;
+                    transition: fill 0.15s ease;
+                  }
+                  &:hover {
+                    color: $light-a100;
+                    border-bottom: none;
+                    svg {
+                      fill: $light-a100;
+                    }
+                  }
+                }
+              }
+            }
+            blockquote {
+              background-color: $dark-a015;
+              border-left: none;
+            }
+            .expanded-quote {
+              .highlighted {
+                background-color: $light-a015;
+              }
+            }
+          }
+        }
+        .post-links-container {
+          .post-links {
+            border-top: 1px solid $light-a015;
+            .track-link {
+              color: $light-a075;
+              transition: color 0.15s ease;
+              svg {
+                fill: $light-a075;
+                transition: fill 0.15s ease;
+              }
+              span {
+                color: $light-a075;
+                transition: color 0.15s ease;
+              }
+              &:hover {
+                color: $light-a100;
+                svg {
+                  fill: $light-a100;
+                }
+                span {
+                  color: $light-a100;
+                }
+              }
+              .badge-notification {
+                background: $light-a025;
+                color: $light-a100;
+              }
+            }
+          }
+        }
+        .post-menu-area {
+          .post-controls {
+            .show-replies {
+              span {
+                // font-size: $font-up-1;
+                color: $light-a050;
+                transition: color 0.15s ease;
+              }
+              svg {
+                fill: $light-a050;
+                transition: fill 0.15s ease;
+              }
+              &:hover {
+                background: $light-a015;
+                span {
+                  color: $light-a100;
+                }
+                svg {
+                  fill: $light-a100;
+                }
+              }
+            }
+            .actions {
+              .double-button {
+                .like-count {
+                  color: $light-a050;
+                  transition: all 0.15s ease;
+                }
+                .toggle-like {
+                  opacity: 1;
+                  svg {
+                    fill: $light-a050;
+                    transition: fill 0.15s ease;
+                  }
+                  &.has-like {
+                    svg {
+                      fill: $light-a085;
+                    }
+                  }
+                }
+                &:hover {
+                  .like-count {
+                    color: $light-a100;
+                    background: $light-a015;
+                  }
+                  .toggle-like {
+                    background: $light-a015;
+                    svg {
+                      fill: $light-a100;
+                    }
+                  }
+                }
+              }
+              button {
+                transition: background 0.15s ease;
+                svg {
+                  fill: $light-a050;
+                  transition: fill 0.15s ease;
+                }
+                &:hover {
+                  background: $light-a015;
+                  svg {
+                    fill: $light-a100;
+                  }
+                }
+                &.bookmarked {
+                  svg {
+                    fill: $light-a085;
+                  }
+                }
+                &.delete {
+                  &:hover{
+                    background: $theme-danger;
+                  }
+                }
+                &.show-post-admin-menu {
+                  @include rgba-hex(background, $theme-staff, 0.85);
+                  svg {
+                    fill: $light-a100;
+                  }
+                  &:hover {
+                    background: $theme-staff;
+                  }
+                }
+                &.reply {
+                  opacity: 1;
+                  span {
+                    color: $light-a050;
+                    transition: color 0.15s ease;
+                    &:hover {
+                      color: $light-a100;
+                    }
+                  }
+                  &:hover {
+                    span {
+                      color: $light-a100;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .who-liked {
+            color: $light-a075;
+          }
+        }
+        .topic-map {
+          background: $dark-a015;
+          border: none;
+          .map {
+            border-top: none;
+            .buttons {
+              button {
+                background: none;
+                border-left: none;
+                svg {
+                  fill: $light-a050;
+                  transition: fill 0.15s ease;
+                }
+                &:hover {
+                  svg {
+                    fill: $light-a100;
+                  }
+                }
+              }
+            }
+            ul {
+              li {
+                h4 {
+                  color: $light-a050;
+                }
+                span {
+                  color: $light-a075;
+                }
+                .topic-map-post {
+                  span {
+                    color: $light-a075;
+                  }
+                }
+              }
+            }
+          }
+          .topic-map-expanded {
+            border-top: none;
+            .avatars {
+              border-top: 1px solid $light-a015;
+              h3 {
+                color: $light-a050;
+              }
+            }
+            .links {
+              border-top: 1px solid $light-a015;
+              h3 {
+                color: $light-a050;
+              }
+              .topic-links {
+                td {
+                  a {
+                    color: $light-a075;
+                    transition: color 0.15s ease;
+                    span {
+                      color: $light-a075;
+                      transition: color 0.15s ease;
+                    }
+                    &:hover {
+                      color: $light-a100;
+                      span {
+                        color: $light-a100;
+                      }
+                    }
+                  }
+                  span {
+                    &.badge-notification {
+                      background: $light-a025;
+                      color: $light-a100;
+                    }             
+                  }
+                }
+              }
+            }
+          }
+          .toggle-summary {
+            border-top: 1px solid $light-a015;
+            div {
+              p {
+                color: $light-a085;
+              }
+            }
+          }
+          .private-message-map {
+            border-top: 1px solid $light-a015;
+            .participants {
+              .user {
+                border: none;
+                background: $light-a015;
+                transition: background 0.15s ease;
+                a {
+                  svg {
+                    fill: $light-a075;
+                    transition: fill 0.15s ease;
+                  }
+                  span {
+                    color: $light-a075;
+                    transition: color 0.15s ease;
+                  }
+                }
+                &:hover {
+                  background: $light-a025;
+                  a {
+                    svg {
+                      fill: $light-a100;
+                    }
+                    span {
+                      color: $light-a100;
+                    }
+                  }
+                }
+                .remove-invited {
+                  background: transparent;
+                  svg {
+                    fill: $light-a075;
+                    transition: fill 0.15s ease;
+                  }
+                  &:hover {
+                    background: transparent;
+                    svg {
+                      fill: $light-a100;
+                    }
+                  }
+                }
+              }
+            }
+            .controls {
+              button {
+                background: $light-a015;
+                transition: background 0.15s ease;
+                span {
+                  color: $light-a075;
+                  transition: color 0.15s ease;
+                }
+                svg {
+                  fill: $light-a075;
+                  transition: fill 0.15s ease;
+                }
+                &:hover {
+                  background: $light-a025;
+                  span {
+                    color: $light-a100;
+                  }
+                  svg {
+                    fill: $light-a100;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .embedded-posts {
+          border: none;
+          div {
+            .reply {
+              background: $dark-a015;
+              .topic-avatar {
+                border-top: 1px solid $light-a015;
+              }
+              .topic-body {
+                border-top: 1px solid $light-a015;
+                .topic-meta-data {
+                  .names {
+                    a {
+                      color: $light-a085;
+                    }
+                  }
+                  .post-link-arrow {
+                    a {
+                      color: $light-a050;
+                      transition: color 0.15s ease;
+                      &:hover {
+                        color: $light-a100;
+                      }
+                    }
+                  }
+                }
+                .quote {
+                  background: transparent;
+                  border-left: 5px solid $light-a015;
+                  color: $light-a085;
+                  .title {
+                    background: $dark-a015;
+                    border-left: none;
+                    color: $light-a085;
+                    font-weight: bold;
+                    .quote-controls {
+                      color: $light-a050;
+                      transition: color 0.15s ease;
+                      svg {
+                        fill: $light-a050;
+                        transition: fill 0.15s ease;
+                      }
+                      &:hover {
+                        color: $light-a100;
+                        svg {
+                          fill: $light-a100;
+                        }
+                      }
+                    }
+                  }
+                  blockquote {
+                    background: $dark-a015;
+                  }
+                  .expanded-quote {
+                    .highlighted {
+                      background-color: $light-a015;
+                    }
+                  }
+                }
+              }
+            }
+            &:first-of-type {
+              .reply {
+                .topic-avatar {
+                  border-top: none;
+                }
+                .topic-body {
+                  border-top: none;
+                }
+              }
+            }
+          }
+          .widget-button {
+            background: $theme-primary;
+            transition: background 0.15s ease;
+            border: 1px solid $light-a015;
+            svg {
+              fill: $light-a050;
+              transition: fill 0.15s ease;
+            }
+            &:hover {
+              background: $light-a025;
+              svg {
+                fill: $light-a100;
+              }
+            }
+          }
+        }
+        .post-actions {
+          .post-action {
+            &.deleted-post {
+              svg {
+                fill: $light-a085;
+              }
+              span {
+                color: $light-a085;
+              }
+            }
+          }
+        }
+      }
+      .embedded-posts {
+        border: none;
+        div {
+          .reply {
+            background: $dark-a015;
+            .topic-avatar {
+              border-top: none;
+            }
+            .topic-body {
+              border-top: none;
+              .topic-meta-data {
+                .names {
+                  a {
+                    color: $light-a085;
+                  }
+                }
+                .post-link-arrow {
+                  a {
+                    color: $light-a050;
+                    transition: color 0.15s ease;
+                    &:hover {
+                      color: $light-a100;
+                    }
+                  }
+                }
+              }
+              .quote {
+                background: transparent;
+                border-left: 5px solid $light-a015;
+                color: $light-a085;
+                .title {
+                  background: $dark-a015;
+                  border-left: none;
+                  color: $light-a085;
+                  font-weight: bold;
+                  .quote-controls {
+                    color: $light-a050;
+                    transition: color 0.15s ease;
+                    svg {
+                      fill: $light-a050;
+                      transition: fill 0.15s ease;
+                    }
+                    &:hover {
+                      color: $light-a100;
+                      svg {
+                        fill: $light-a100;
+                      }
+                    }
+                  }
+                }
+                .expanded-quote {
+                  .highlighted {
+                    background-color: $light-a015;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .widget-button {
+          background: $theme-primary;
+          transition: background 0.15s ease;
+          border: 1px solid $light-a015;
+          svg {
+            fill: $light-a050;
+            transition: fill 0.15s ease;
+          }
+          &:hover {
+            background: $light-a025 !important;
+            svg {
+              fill: $light-a100;
+            }
+          }
+        }
+      }
+      .post-notice {
+        background-color: $light-a015;
+        border-top: 1px solid $theme-primary;
+        svg {
+          fill: $light-a085;
+        }
+        p {
+          color: $light-a085;
+        }
+      }
+      &.selected {
+        box-shadow: -3px 0 0 $light-a100;
+      }
+      &.deleted {
+        .topic-body {
+          background-color: $dark-a025;
+          .contents {
+            .cooked {
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+    }
+    .gap {
+      color:$light-a050;
+      font-weight: normal;
+    }
+    .small-action {
+      background: $light-a005;
+      border-top: 1px solid $theme-primary;
+      .topic-avatar {
+        svg {
+          fill: $light-a050;
+        }
+      }
+      .small-action-desc {
+        color: $light-a050;
+        button {
+          transition: background 0.15s ease;
+          svg {
+            fill: $light-a050;
+          }
+          &:hover {
+            background: $light-a015;
+            svg {
+              fill: $light-a100;
+            }
+          }
+        }
+        p {
+          color: $light-a050;
+        }
+        .custom-message {
+          p {
+            color: $light-a075;
+          }
+        }
+        &.timeago,
+        &.timegap {
+          color: $light-a050;
+        }
+      }
+    }
+    .selected-posts {
+      background: $theme-secondary;
+      border: none;
+      p {
+        a {
+          color: $light-a050;
+          transition: color 0.15s ease;
+          &:hover {
+            color: $light-a075;
+          }
+        }
+      }
+      button {
+        @include rgba-hex(background, $theme-action, 0.85);
+        transition: all 0.15s ease;
+        svg {
+          fill: $light-a085;
+          transition: fill 0.15s ease;
+        }
+        span {
+          color: $light-a085;
+          transition: color 0.15s ease;
+        }
+        &:hover {
+          background: $theme-action !important;
+          svg {
+            fill: $light-a100;
+          }
+          span {
+            color: $light-a100;
+          }
+        }
+      }
+    }
+  }
+}

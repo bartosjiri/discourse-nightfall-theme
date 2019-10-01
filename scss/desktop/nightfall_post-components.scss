@@ -1,0 +1,32 @@
+body {
+  &:not(.admin-interface) {
+    .poll {
+      .poll-container {
+        ul {
+          li {
+            font-size: $font-0;
+          }
+        }
+        .poll-results-number-rating > span {
+          font-size: $font-down-2;
+        }
+      }
+      .poll-info {
+        .info-number {
+          font-size: $font-up-5;
+        }
+        .info-label {
+          font-size: $font-up-2;
+        }
+      }
+      .poll-buttons {
+        font-size: $font-down-1;
+        button {
+          svg {
+            font-size: $font-down-1;
+          }
+        }
+      }
+    }
+  }
+}

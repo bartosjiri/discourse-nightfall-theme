@@ -1,0 +1,179 @@
+body {
+  &:not(.admin-interface) {
+    a {
+      &.hashtag {
+        &:hover {
+          span {
+            text-decoration: none;
+            border-bottom: none;
+          }
+        }
+      }
+      &.mention {
+        background: transparent;
+        border-radius: 0;
+      }
+    }
+    pre code,
+    p code {
+      background: $dark-a015;
+      color: $light-a075;
+    }
+    kbd {
+      background: $dark-a025;
+      color: $light-a100;
+      box-shadow: none;
+      border: 1px solid $light-a025;
+    }
+    aside {
+      &.onebox {
+        border: none;
+        background: $dark-a015;
+        color: $light-a075;
+        header {
+          a {
+            color: $light-a085;
+            border-bottom: none;
+            &:hover {
+              border-bottom: none;
+            }
+          }
+        }
+        .onebox-body {
+          h3,
+          h4 {
+            a {
+              color: $light-a085;
+              border-bottom: none;
+              &:hover {
+                border-bottom: none;
+              }
+            }
+          }
+          a {
+            color: $light-a085;
+            &:hover {
+              border-bottom: 1px solid $light-a085;
+            }
+          }
+          .date {
+            a {
+              color: $light-a050;
+              transition: color 0.15s ease;
+              border-bottom: none;
+            }
+            span {
+              color: $light-a050;
+              svg {
+                fill: $light-a050;
+              }
+            }
+          }
+        }
+      }
+    }
+    blockquote {
+      background: $dark-a015;
+      border-left: 5px solid $light-a015;
+    }
+    .discourse-local-date {
+      &.cooked-date {
+        color: $light-a100;
+        border-bottom: 1px dashed $light-a025;
+        transition: all 0.15s ease;
+        span svg {
+          fill: $light-a100;
+        }
+        &:hover {
+          border-bottom: 1px dashed $light-a100;
+        }
+      }
+    }
+    .tooltip {
+      color: $dark-a100;
+    }
+    .poll {
+      border: none;
+      background: $dark-a015;
+      .poll-container {
+        ul {
+          li {
+            // font-size: $font-0;
+            color: $light-a085;
+            transition: color 0.15s ease;
+            &:hover {
+              color: $light-a100;
+            }
+            span {
+              color: $light-a085;
+            }
+          }
+        }
+        .results,
+        .poll-results-number-rating {
+          li {
+            &:not(.chosen) {
+              .bar-back {
+                background: $light-a050;
+              }
+            }
+          }
+        }
+        .poll-voters-list {
+          a,
+          .trigger-user-card {
+            opacity: 0.5;
+            transition: opacity 0.15s ease;
+            border-bottom: none;
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+        .poll-results-number-rating > span {
+          // font-size: $font-down-2;
+        }
+      }
+      .poll-info {
+        color: $light-a075;
+        border-left: 1px solid $light-a015;
+        .info-number {
+          // font-size: $font-up-5;
+        }
+        .info-label {
+          // font-size: $font-up-2;
+        }
+      }
+      .poll-buttons {
+        border-top: 1px solid $light-a015;
+        // font-size: $font-down-1;
+        button {
+          background: $light-a025;
+          transition: all 0.15s ease;
+          svg {
+            fill: $light-a085;
+            // font-size: $font-down-1;
+          }
+          span {
+            color: $light-a085;
+          }
+          &:hover {
+            background: $light-a050;
+            svg {
+              fill: $light-a100;
+            }
+            span {
+              color: $light-a100;
+            }
+          }
+        }
+        span {
+          color: $light-a050;
+        }
+      }
+    }
+    #d-popover {
+      color: $dark-a100;
+    }
+  }
+}
