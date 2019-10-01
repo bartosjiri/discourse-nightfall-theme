@@ -12,16 +12,16 @@
         "header-background": "assets/header-background.jpg"
     },
     "color_schemes": {
-        "Nightfall": {
+        "Nightfall Admin": {
             "primary": "222222",
             "secondary": "ffffff",
-            "tertiary": "6812e6",
-            "quaternary": "27135c",
+            "tertiary": "0088cc",
+            "quaternary": "e45735",
             "header_background": "ffffff",
             "header_primary": "333333",
             "highlight": "ffff4d",
             "danger": "e45735",
-            "success": "1ca551",
+            "success": "009900",
             "love": "fa6c8d"
         }
     }
