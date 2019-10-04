@@ -36,4 +36,4 @@ If you find a bug, please check for possible duplicates first before opening a n
 All improvements are welcome. Feel free to suggest them through an issue or a pull request.
 
 ## License
-`TBD`
+Licensed under the [MIT License](https://github.com/bartosjiri/discourse-nightfall-theme/blob/master/LICENSE).
